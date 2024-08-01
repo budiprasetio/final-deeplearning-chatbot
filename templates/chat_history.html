@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat History</title>
+    <link rel="stylesheet" href="static/chathistory/style.css" />
+    <link rel="icon" href="static/titleLogo-Iteba.png" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="login-popup" id="login-popup">
+      <h3>Login</h3>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div class="container" id="chat-container" style="display: none">
+      <h2>Chat History</h2>
+      <table id="chat-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Timestamp</th>
+            <th>User Message</th>
+            <th>Bot Response</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for message in messages %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ message.timestamp }}</td>
+            <td>{{ message.user_message }}</td>
+            <td>{{ message.bot_response }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="pagination" id="pagination">
+        <button onclick="firstPage()" id="first-btn" disabled>First</button>
+        <button onclick="prevPage()" id="prev-btn" disabled>Previous</button>
+        <input type="number" id="page-number" min="1" value="1" onchange="goToPage(this.value)" />
+        <button onclick="nextPage()" id="next-btn">Next</button>
+        <button onclick="lastPage()" id="last-btn">Last</button>
+      </div>
+      <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+    <script src="static/chathistory/script.js"></script>
+  </body>
+</html>

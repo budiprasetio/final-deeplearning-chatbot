@@ -1,0 +1,1192 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Halo", "Hai", "Haii", "Ada yang bisa dibantu?", "Hai kamu", "Halo juga", "Hai disana", "Apa kabar", "Hai, apa kabar?", "Hai, apa kabarmu?", "Hai, gimana kabarnya?", "Apa kabar kamu?", "hola", "holla"],
+      "responses": [
+        "Halo. Ada yang bisa saya bantu?",
+        "Hai. Ada yang bisa saya bantu hari ini?",
+        "Hai. Ada yang bisa saya lakukan untukmu?",
+        "Senang bertemu denganmu. Bagaimana perasaanmu saat ini?",
+        "Halo. Senang melihat kamu kembali. Ada yang bisa saya bantu?"
+      ]
+    },
+    {
+      "tag": "morning",
+      "patterns": ["Selamat pagi", "Pagii", "Pagi min", "Pagi Pagi", "Good Morning", "Morning min"],
+      "responses": ["Selamat pagi! Apa kabar hari ini? Ada yang bisa saya bantu?"]
+    },
+    {
+      "tag": "afternoon",
+      "patterns": ["Selamat siang", "Siangg", "Siang min", "Siang Siang", "Good Afternoon", "Afternoon min"],
+      "responses": ["Selamat siang! Bagaimana harimu? Apakah ada yang bisa saya bantu?"]
+    },
+    {
+      "tag": "evening",
+      "patterns": ["Selamat sore", "Soree", "Sore min", "Sore Sore", "Good Evening selamat sore", "Evening sore min"],
+      "responses": ["Selamat sore! Bagaimana aktivitasmu hari ini? Ada yang bisa saya bantu?"]
+    },
+    {
+      "tag": "night",
+      "patterns": ["Selamat malam", "Malam min", "Malam Malam", "Good Night", "Night min"],
+      "responses": ["Selamat malam! Ada yang bisa saya bantu?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Selamat tinggal", "Sampai jumpa", "Goodbye", "Selamat jalan", "bye", "sayonara"],
+      "responses": ["Sampai jumpa! Semoga harimu menyenangkan.", "Selamat tinggal! Jangan ragu untuk datang kembali."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Terima kasih", "Makasih", "Terima kasih banyak", "Thanks", "Thanks min", "thank u"],
+      "responses": ["Sama-sama! Senang bisa membantu.", "Tidak masalah. Ada yang bisa saya bantu lagi?"]
+    },
+    {
+      "tag": "no-response",
+      "patterns": [""],
+      "responses": [
+        "Maaf, sepertinya ada yang tidak jelas. Bisa dijelaskan lebih lanjut?",
+        "Apa yang kamu maksud? Saya tidak begitu paham.",
+        "Maaf, saya tidak mengerti pertanyaan Anda. Bisa Anda jelaskan lebih lanjut?",
+        "Maaf, saya tidak memiliki informasi tentang hal itu.",
+        "Maaf, terjadi kesalahan teknis. Silakan coba lagi nanti."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": ["Kenalan dong", "Siapa kamu?", "Apa kamu?", "Siapa dirimu?", "Ceritakan lebih tentang dirimu.", "Namamu apa?", "Apa sebutanmu?", "Siapa namamu?", "Ceritakan tentang dirimu"],
+      "responses": [
+        "Halo, saya ITEBA Chatbot, asisten virtual untuk membantu informasi seputar Institut Teknologi Batam (ITEBA). Ada yang bisa saya bantu terkait kampus ITEBA?",
+        "Saya ITEBA Chatbot, diciptakan untuk memberikan informasi terkini seputar Institut Teknologi Batam (ITEBA). Ada yang bisa saya sampaikan?",
+        "Saya ITEBA Chatbot, didesain sebagai asisten untuk memberikan informasi mengenai kampus ITEBA. Ada yang ingin kamu ketahui?",
+        "Kamu bisa memanggil saya ITEBA Chatbot.",
+        "Saya ITEBA Chatbot!",
+        "Boleh panggil saya ITEBA Chatbot yaa :)"
+      ]
+    },
+    {
+      "tag": "skill",
+      "patterns": ["Apa yang bisa kamu lakuin?", "Kegunaan lu apa aja?", "Bagaimana kegunaan lu?", "Kamu bisa apa aja dan bisa ngapain aja?", "Fungsi kamu apa?", "Keunggulan kamu? Apa yang bisa kamu lakuin?"],
+      "responses": [
+        "Gue bisa kasih info seputar Institut Teknologi Batam (ITEBA), jawabin pertanyaan seputar kampus, dan ngebantu kalo lu butuh info soal kegiatan atau acara di ITEBA.",
+        "Kalo lu mau tanya-tanya soal fasilitas di ITEBA, acara kampus, atau hal-hal seru lainnya, langsung aja tanya ke gue!"
+      ]
+    },
+    {
+      "tag": "creation",
+      "patterns": ["Siapa yang menciptakanmu?", "Bagaimana kamu dibuat?", "Bagaimana kamu diciptakan?"],
+      "responses": ["Saya diciptakan oleh tim pengembang ITEBA.", "Saya dibuat oleh tim pengembang ITEBA menggunakan teknik Deep Learning & Natural Language Processing."]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Bisakah Anda membantu saya?",
+        "Tolong berikan bantuan",
+        "Apakah Anda bisa membantu?",
+        "Apa yang bisa Anda lakukan untuk saya?",
+        "Saya membutuhkan dukungan",
+        "Saya butuh bantuan",
+        "Bisakah Anda memberi dukungan?",
+        "Saya mau bertanya",
+        "boleh bertanya ga",
+        "boleh nanya ga",
+        "bisa minta tolong"
+      ],
+      "responses": ["Tentu saja! Silahkan apa yang anda mau tanyain, saya siap membantu.", "Ya, tentu saja. Bagaimana saya bisa membantu Anda?", "Pasti, saya siap membantu Anda. Apa yang mau kamu tanyain?"]
+    },
+    {
+      "tag": "registration",
+      "patterns": [
+        "Bagaimana cara mendaftar di kampus ini?",
+        "Apa saja langkah-langkah untuk registrasi di kampus?",
+        "Bisakah Anda jelaskan proses pendaftaran di sini?",
+        "Apa yang harus saya lakukan untuk bisa mendaftar di kampus ini?",
+        "Bagaimana prosedur pendaftaran mahasiswa baru?",
+        "Dimana saya bisa mendapatkan informasi tentang pendaftaran?",
+        "Apa saja persyaratan untuk mendaftar di kampus ini?",
+        "Bagaimana alur pendaftaran di kampus ini?",
+        "Apakah ada panduan untuk pendaftaran mahasiswa baru?",
+        "Apa yang harus saya siapkan untuk proses pendaftaran di kampus?"
+      ],
+      "responses": [
+        "Untuk mendaftar di Institut Teknologi Batam, ikuti langkah-langkah berikut:<br>1. Daftar di Siakad ITEBA : <a href='https://siakad.iteba.ac.id/admission'>https://siakad.iteba.ac.id/admission</a>.<br>2. Isi data diri, dokumen dan pilih gelombang pendaftaran sesuai dengan yang ada di siakad.<br> 3. Konfirmasi ke panitia PMB melalui Whatsapp : 0811-6060-0996 jika sudah mendaftar di SIAKAD ITEBA.<br> 4. Tes tertulis secara daring.<br> 5. Terima hasil tes dan mengisi Letter of Agreement (LOA).<br> 6. Pembayaran biaya awal kuliah melalui Virtual Account.<br> 7. Pengukuran seragam Almamater di kantor Gallery Mahasiswa Baru.<br> 8. Pendaftaran selesai!<br> Nahh Mudah kan? Yuk segera ikuti langkah-langkah diatas."
+      ]
+    },
+    {
+      "tag": "registration_documents",
+      "patterns": [
+        "Dokumen apa saja yang diperlukan untuk pendaftaran?",
+        "Apa saja berkas yang harus disiapkan untuk mendaftar?",
+        "Apa syarat dokumen untuk registrasi di kampus ini?",
+        "Berkas apa saja yang dibutuhkan untuk proses pendaftaran?",
+        "Dokumen apa yang harus saya siapkan untuk mendaftar di kampus ini?",
+        "Apa saja dokumen yang diperlukan untuk pendaftaran mahasiswa baru?",
+        "Berkas apa yang diperlukan untuk pendaftaran mahasiswa baru?",
+        "Dokumen apa yang harus disiapkan untuk pendaftaran di kampus ini?",
+        "Berkas apa yang dibutuhkan untuk mendaftar di Institut Teknologi Batam?",
+        "Apa saja persyaratan dokumen untuk pendaftaran di kampus ini?"
+      ],
+      "responses": [
+        "Untuk pendaftaran di Institut Teknologi Batam, Anda perlu menyiapkan berkas-berkas berikut:<br>1. Fotokopi KTP, KK, Akte Kelahiran<br>2. Fotokopi Ijazah SMA/Sederajat yang telah dilegalisir<br>3. Fotokopi Rapor terakhir<br>4. Pas foto latar merah ukuran 3×4 dan 4×6 (masing-masing 2 lembar)<br>5. Surat keterangan sehat dari Dokter"
+      ]
+    },
+    {
+      "tag": "transfer_registration_requirements",
+      "patterns": [
+        "Apa saja persyaratan untuk mahasiswa transfer?",
+        "Bagaimana cara mendaftar sebagai mahasiswa transfer?",
+        "Apa syarat untuk menjadi mahasiswa transfer di ITEBA?",
+        "Dokumen apa saja yang diperlukan untuk pendaftaran mahasiswa transfer?",
+        "Apa saja yang harus disiapkan untuk menjadi mahasiswa transfer?",
+        "Syarat pendaftaran mahasiswa transfer di ITEBA apa saja?",
+        "Berkas apa yang dibutuhkan untuk mendaftar sebagai mahasiswa transfer?",
+        "Bagaimana proses pendaftaran untuk mahasiswa transfer di ITEBA?",
+        "Langkah-langkah apa yang perlu dilakukan untuk menjadi mahasiswa transfer?",
+        "Apa yang harus dilakukan untuk mendaftar sebagai mahasiswa transfer di ITEBA?"
+      ],
+      "responses": [
+        "Berikut ini ketentuan pendaftaran sebagai mahasiswa transfer Institut Teknologi Batam:<br>1. Mengumpulkan Ijazah SMA dan syarat pendaftaran umum S-1.<br>2. Mengumpulkan Transkrip Nilai dari pendidikan sebelumnya.<br>3. Pihak Universitas akan melakukan penyetaraan Transkrip Nilai ke program studi yang dipilih.<br>4. Form penyetaraan yang sudah ditandatangani Wakil Rektor I akan diserahkan ke pendaftar kemudian melanjutkan proses pendaftaran dan Ujian Saringan Masuk ITEBA."
+      ]
+    },
+    {
+      "tag": "international_graduate_registration_requirements",
+      "patterns": [
+        "Apa saja persyaratan untuk mahasiswa lulusan luar negeri?",
+        "Bagaimana cara mendaftar sebagai mahasiswa lulusan luar negeri?",
+        "Apa syarat untuk menjadi mahasiswa lulusan luar negeri di ITEBA?",
+        "Dokumen apa saja yang diperlukan untuk pendaftaran mahasiswa lulusan luar negeri?",
+        "Apa saja yang harus disiapkan untuk menjadi mahasiswa lulusan luar negeri?",
+        "Syarat pendaftaran mahasiswa lulusan luar negeri di ITEBA apa saja?",
+        "Berkas apa yang dibutuhkan untuk mendaftar sebagai mahasiswa lulusan luar negeri?",
+        "Bagaimana proses pendaftaran untuk mahasiswa lulusan luar negeri di ITEBA?",
+        "Langkah-langkah apa yang perlu dilakukan untuk menjadi mahasiswa lulusan luar negeri?",
+        "Apa yang harus dilakukan untuk mendaftar sebagai mahasiswa lulusan luar negeri di ITEBA?"
+      ],
+      "responses": [
+        "Berikut ini ketentuan pendaftaran mahasiswa lulusan luar negeri (SMA atau Sarjana) di ITEBA:<br>Dokumen Ijazah yang berasal dari luar negeri wajib disetarakan di Kemendikbud (<a href='https://ijazahln.kemdikbud.go.id/ijazahln/'>https://ijazahln.kemdikbud.go.id/ijazahln/</a>)"
+      ]
+    },
+    {
+      "tag": "transfer_student_registration_requirements",
+      "patterns": [
+        "Apa saja persyaratan untuk mahasiswa alih jenjang?",
+        "Bagaimana cara mendaftar sebagai mahasiswa alih jenjang?",
+        "Apa syarat untuk menjadi mahasiswa alih jenjang di ITEBA?",
+        "Dokumen apa saja yang diperlukan untuk pendaftaran mahasiswa alih jenjang?",
+        "Apa saja yang harus disiapkan untuk menjadi mahasiswa alih jenjang?",
+        "Syarat pendaftaran mahasiswa alih jenjang di ITEBA apa saja?",
+        "Berkas apa yang dibutuhkan untuk mendaftar sebagai mahasiswa alih jenjang?",
+        "Bagaimana proses pendaftaran untuk mahasiswa alih jenjang di ITEBA?",
+        "Langkah-langkah apa yang perlu dilakukan untuk menjadi mahasiswa alih jenjang?",
+        "Apa yang harus dilakukan untuk mendaftar sebagai mahasiswa alih jenjang di ITEBA?"
+      ],
+      "responses": [
+        "Berikut ini ketentuan pendaftaran sebagai mahasiswa alih jenjang di INSTITUT TEKNOLOGI BATAM:<br>1. Mengantar Transkrip Nilai dari pendidikan sebelumnya ke kantor gallery penerimaan mahasiswa baru.<br>2. Pihak Kampus akan melakukan penyetaraan Transkrip Nilai ke program studi yang dipilih.<br>3. Formulir penyetaraan yang sudah ditandatangani Wakil Rektor I akan diserahkan ke pendaftar kemudian melanjutkan proses pendaftaran dan Ujian Saringan Masuk ITEBA."
+      ]
+    },
+    {
+      "tag": "transfer_student_registration_procedure",
+      "patterns": [
+        "Bagaimana prosedur registrasi mahasiswa alih jenjang?",
+        "Apa langkah-langkah untuk alih jenjang di ITEBA?",
+        "Bagaimana cara mengajukan permohonan alih jenjang?",
+        "Apa yang harus dilakukan untuk alih jenjang di ITEBA?",
+        "Proses registrasi mahasiswa alih jenjang seperti apa?",
+        "Bagaimana prosedur pelaksanaan alih jenjang di ITEBA?",
+        "Langkah-langkah apa yang harus diambil untuk alih jenjang?",
+        "Bagaimana proses konversi mata kuliah untuk mahasiswa alih jenjang?",
+        "Apa saja yang perlu dilakukan untuk registrasi alih jenjang?",
+        "Bagaimana cara melakukan alih jenjang di ITEBA?"
+      ],
+      "responses": [
+        "Berikut ini pelaksanaan prosedur registrasi mahasiswa baru alih jenjang di INSTITUT TEKNOLOGI BATAM:<br>1. Mahasiswa pindahan mengajukan permohonan alih jenjang kepada Rektor ITEBA c/q Bagian Akademik dengan membawa Transkrip Nilai sebelumnya melalui ke kantor gallery penerimaan mahasiswa baru.<br>2. Mahasiswa yang memenuhi persyaratan, oleh Bagian Akademik akan diterbitkan surat permohonan kepada Dekan/Kaprodi untuk penetapan konversi mata kuliah dan nilai.<br>3. Mahasiswa baru alih jenjang melaksanakan konversi mata kuliah pada program studi tujuan.<br>4. Mahasiswa baru alih jenjang melunasi biaya registrasi dan konversi mata kuliah sebagaimana yang telah ditetapkan oleh Bagian Keuangan.<br>5. Bagian Akademik melaksanakan KRS Online di Sistem Informasi Akademik.<br>6. Nilai hasil konversi yang telah disetujui Rektor diinputkan ke Sistem Informasi Akademik oleh Bagian Akademik."
+      ]
+    },
+    {
+      "tag": "transfer_student_registration_procedure",
+      "patterns": [
+        "Bagaimana prosedur registrasi mahasiswa pindahan?",
+        "Apa langkah-langkah untuk mahasiswa pindahan di ITEBA?",
+        "Bagaimana cara mengajukan permohonan pindahan?",
+        "Apa yang harus dilakukan untuk pindahan di ITEBA?",
+        "Proses registrasi mahasiswa pindahan seperti apa?",
+        "Bagaimana prosedur pelaksanaan pindahan di ITEBA?",
+        "Langkah-langkah apa yang harus diambil untuk pindahan?",
+        "Bagaimana proses konversi mata kuliah untuk mahasiswa pindahan?",
+        "Apa saja yang perlu dilakukan untuk registrasi pindahan?",
+        "Bagaimana cara melakukan pindahan di ITEBA?"
+      ],
+      "responses": [
+        "Berikut ini pelaksanaan prosedur registrasi mahasiswa pindahan di INSTITUT TEKNOLOGI BATAM:<br>1. Mahasiswa pindahan mengajukan permohonan alih jenjang kepada Rektor ITEBA c/q Bagian Akademik dengan melampirkan surat dari institusi asal dan mengantar Transkrip Nilai sebelumnya ke kantor gallery penerimaan mahasiswa baru.<br>2. Mahasiswa pindahan yang memenuhi persyaratan, oleh Bagian Akademik akan diterbitkan surat permohonan kepada Dekan/Kaprodi untuk penetapan konversi mata kuliah dan nilai.<br>3. Mahasiswa pindahan melaksanakan konversi mata kuliah pada program studi tujuan.<br>4. Mahasiswa pindahan melunasi biaya registrasi dan konversi mata kuliah sebagaimana yang telah ditetapkan oleh Bagian Keuangan.<br>5. Bagian Akademik melaksanakan KRS Online di Sistem Informasi Akademik.<br>6. Hasil konversi yang telah disetujui Rektor diinputkan ke Sistem Informasi Akademik oleh Bagian Akademik."
+      ]
+    },
+    {
+      "tag": "initial_costs",
+      "patterns": ["Berapa biaya awal?", "Apa saja yang termasuk dalam biaya awal?", "Berapa total biaya awal?", "Rincian biaya awal", "Informasi tentang biaya awal"],
+      "responses": [
+        "Biaya awal adalah Rp 5.650.000,- untuk periode Mei - September 2024. Anda juga dapat memilih untuk membayar dalam 5 kali cicilan sebesar Rp 1.130.000,- per cicilan. Jika Anda membayar langsung lunas, Anda akan mendapatkan cashback sebesar Rp 500.000,-. Biaya ini sudah termasuk Biaya Pembangunan, Biaya Pelantikan & Orientasi Mahasiswa Baru (PKMB), dan Biaya Jas Almamater."
+      ]
+    },
+    {
+      "tag": "visual_communication_design_cost",
+      "patterns": [
+        "Berapa biaya per semester untuk jurusan Desain Komunikasi Visual?",
+        "Biaya per semester untuk DKV?",
+        "Berapa biaya kuliah Desain Komunikasi Visual?",
+        "Berapa biaya DKV per semester?",
+        "Informasi biaya Desain Komunikasi Visual",
+        "biaya dkv",
+        "biaya desain komunikasi visual",
+        "jurusan DKV / Desain komunikasi Visual uang kuliahnya berapa sih?"
+      ],
+      "responses": [
+        "Biaya per semester untuk program studi Desain Komunikasi Visual adalah Rp 9.000.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Pembayaran dilakukan secara tunai. Semoga informasi ini bermanfaat. Jika ada pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami!"
+      ]
+    },
+    {
+      "tag": "system_information_cost",
+      "patterns": [
+        "Berapa biaya per bulan untuk Sistem Informasi?",
+        "Biaya per bulan untuk SI?",
+        "Berapa biaya kuliah Sistem Informasi?",
+        "Berapa biaya SI per bulan?",
+        "Informasi biaya Sistem Informasi",
+        "biaya si",
+        "biaya sistem informasi",
+        "jurusan SI / Sistem Informasi uang kuliahnya berapa ya?"
+      ],
+
+      "responses": [
+        "Biaya per bulan untuk program studi Sistem Informasi adalah Rp 1.150.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 6.900.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami!"
+      ]
+    },
+    {
+      "tag": "computer_engginering_cost",
+      "patterns": [
+        "Berapa biaya per bulan untuk Teknik Komputer?",
+        "Biaya per bulan untuk TK?",
+        "Berapa biaya kuliah Teknik Komputer?",
+        "Berapa biaya TK per bulan?",
+        "Informasi biaya Teknik Komputer",
+        "biaya tk",
+        "biaya teknik komputer",
+        "jurusan TK / Teknik Komputer uang kuliahnya berapa sih?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Teknik Komputer adalah Rp 1.150.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 6.900.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jangan ragu untuk menghubungi kami jika ada pertanyaan lebih lanjut!"
+      ]
+    },
+    {
+      "tag": "mathematics_cost",
+      "patterns": [
+        "Berapa biaya untuk jurusan Matematika?",
+        "Apa biaya kuliah Matematika per bulan?",
+        "Berapa harga untuk belajar di jurusan Matematika?",
+        "Biaya kuliah Matematika berapa?",
+        "Berapa biaya kuliah Matematika?",
+        "Harga kuliah Matematika?",
+        "biaya mtk",
+        "biaya matematika",
+        "Biaya belajar di jurusan Matematika?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Matematika adalah Rp 1.084.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 6.504.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jangan ragu untuk menghubungi kami jika ada pertanyaan lebih lanjut!"
+      ]
+    },
+    {
+      "tag": "industrial_engineering_cost",
+      "patterns": [
+        "Berapa biaya untuk jurusan Teknik Industri?",
+        "Apa biaya kuliah Teknik Industri per bulan?",
+        "Berapa harga untuk belajar di jurusan Teknik Industri?",
+        "Biaya kuliah Teknik Industri berapa?",
+        "Berapa biaya kuliah Teknik Industri?",
+        "Harga kuliah Teknik Industri?",
+        "biaya ti",
+        "biaya teknik industri",
+        "Biaya belajar di jurusan Teknik Industri?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Teknik Industri adalah Rp 1.250.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 7.500.000. Jika Anda memilih kelas shift, ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini membantu. Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami!"
+      ]
+    },
+    {
+      "tag": "engineering_management_cost",
+      "patterns": [
+        "Berapa biaya untuk jurusan Manajemen Rekayasa?",
+        "Apa biaya kuliah Manajemen Rekayasa per bulan?",
+        "Berapa harga untuk belajar di jurusan Manajemen Rekayasa?",
+        "Biaya kuliah Manajemen Rekayasa berapa?",
+        "Berapa biaya kuliah Manajemen Rekayasa?",
+        "Harga kuliah Manajemen Rekayasa?",
+        "biaya mr",
+        "biaya manajemen rekayasa",
+        "Biaya belajar di jurusan Manajemen Rekayasa?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Manajemen Rekayasa adalah Rp 1.150.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 6.900.000. Untuk kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami!"
+      ]
+    },
+    {
+      "tag": "international_trade_cost",
+      "patterns": [
+        "Berapa biaya untuk jurusan Perdagangan Internasional?",
+        "Apa biaya kuliah Perdagangan Internasional per bulan?",
+        "Berapa harga untuk belajar di jurusan Perdagangan Internasional?",
+        "Biaya kuliah Perdagangan Internasional berapa?",
+        "Berapa biaya kuliah Perdagangan Internasional?",
+        "Harga kuliah Perdagangan Internasional?",
+        "biaya pi",
+        "biaya perdagangan internasional",
+        "Biaya belajar di jurusan Perdagangan Internasional?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Perdagangan Internasional adalah Rp 1.500.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 9.000.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jangan ragu untuk menghubungi kami jika ada pertanyaan lebih lanjut!"
+      ]
+    },
+    {
+      "tag": "digital_business_cost",
+      "patterns": [
+        "Berapa biaya untuk jurusan Bisnis Digital?",
+        "Apa biaya kuliah Bisnis Digital per bulan?",
+        "Berapa harga untuk belajar di jurusan Bisnis Digital?",
+        "Biaya kuliah Bisnis Digital berapa?",
+        "Berapa biaya kuliah Bisnis Digital?",
+        "Harga kuliah Bisnis Digital?",
+        "biaya db",
+        "biaya digital bisnis",
+        "Biaya belajar di jurusan Bisnis Digital?"
+      ],
+      "responses": [
+        "Biaya per bulan untuk program studi Bisnis Digital adalah Rp 1.500.000. Jika Anda memilih untuk membayar secara penuh untuk satu semester, total biayanya adalah Rp 9.000.000. Jika Anda memilih kelas shift, akan ada tambahan biaya sebesar Rp 1.000.000. Semoga informasi ini bermanfaat. Jangan ragu untuk menghubungi kami jika ada pertanyaan lebih lanjut!"
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "Ada info beasiswa?",
+        "Beasiswa apa saja yang tersedia?",
+        "Bagaimana cara mendapatkan beasiswa?",
+        "Persyaratan beasiswa apa saja?",
+        "Beasiswa Prestasi Non-Akademik",
+        "Potongan biaya kuliah untuk prestasi non-akademik",
+        "Bagaimana cara mendapatkan beasiswa non-akademik?",
+        "Persyaratan beasiswa non-akademik",
+        "Beasiswa Prestasi Akademik",
+        "Beasiswa Rangking",
+        "Potongan biaya kuliah untuk rangking",
+        "Persyaratan beasiswa rangking"
+      ],
+      "responses": [
+        "Berikut adalah informasi mengenai beasiswa yang tersedia:<br><br>**Terdapat dua tipe beasiswa yang bisa Anda dapatkan:**<br><br>### 1. Beasiswa Prestasi Non-Akademik<br><br>Beasiswa ini diberikan kepada mahasiswa yang memiliki prestasi di bidang non-akademik. Beasiswa ini memberikan 50% potongan biaya kuliah semester 1 dan 50% potongan biaya awal.<br><br>**Persyaratan Beasiswa Prestasi Non-Akademik:**<br>- Memiliki sertifikat/piagam kejuaraan non-akademik yang pernah didapatkan, baik di tingkat nasional maupun internasional.<br><br>### 2. Beasiswa Prestasi Akademik<br><br>Beasiswa ini diberikan berdasarkan peringkat akademik selama SMA/SMK. Terdapat tiga jenis beasiswa berdasarkan peringkat:<br><br>#### a. Beasiswa Prestasi Akademik Rangking 1<br>Memberikan 100% bebas biaya kuliah semester 1 dan 100% bebas biaya awal.<br><br>**Persyaratan:**<br>- Rangking 1 selama kelas 10, 11, dan 12<br>- Memiliki sertifikat piagam/kejuaraan yang pernah didapatkan selama SMA/SMK<br>- Melampirkan surat keterangan rekomendasi dari kepala sekolah<br><br>#### b. Beasiswa Prestasi Akademik Rangking 2<br>Memberikan 50% potongan biaya kuliah semester 1 dan 50% potongan biaya awal.<br><br>**Persyaratan:**<br>- Rangking 2 selama kelas 10, 11, dan 12<br>- Memiliki sertifikat piagam/kejuaraan yang pernah didapatkan selama SMA/SMK<br>- Melampirkan surat keterangan rekomendasi dari kepala sekolah<br><br>#### c. Beasiswa Prestasi Akademik Rangking 3<br>Memberikan 50% potongan biaya kuliah semester 1 dan 50% potongan biaya awal.<br><br>**Persyaratan:**<br>- Rangking 3 selama kelas 10, 11, dan 12<br>- Memiliki sertifikat piagam/kejuaraan yang pernah didapatkan selama SMA/SMK<br>- Melampirkan surat keterangan rekomendasi dari kepala sekolah"
+      ]
+    },
+    {
+      "tag": "iteba_general",
+      "patterns": ["sekilas ITEBA", "Apa itu kampus ITEBA?", "Ini kampus apa ya", "Informasi tentang kampus institut teknologi batam", "apa itu kampus iteba"],
+      "responses": [
+        "Institut Teknologi Batam, disingkat ITEBA, merupakan perguruan tinggi swasta yang menyelenggarakan pendidikan tinggi, terdiri atas pendidikan akademik dan pendidikan profesional. ITEBA didirikan oleh Yayasan Vitka bekerja sama dengan Institut Teknologi Bandung, dengan SK Izin Pendirian dari KEMENRISTEKDIKTI Nomor 601/KPT/I/2017."
+      ]
+    },
+    {
+      "tag": "iteba_location",
+      "patterns": ["Lokasi ITEBA", "Alamat ITEBA", "ITEBA berlokasi di mana?", "Di mana lokasi Institut Teknologi Batam?"],
+      "responses": ["ITEBA berlokasi di Kota Batam, Provinsi Kepulauan Riau.", " Alamat lengkap ITEBA adalah: The Vitka City Complex, Tiban, Jl. Gajah Mada, Kota Batam, Kepulauan Riau 29425"]
+    },
+    {
+      "tag": "iteba_faculties",
+      "patterns": ["Program studi dan jurusan  di ITEBA", "Fakultas dan Jurusan di ITEBA", "Apa saja fakultas dan jurusan yang ada di Institut Teknologi Batam?"],
+      "responses": [
+        "ITEBA memiliki dua fakultas, yaitu:<br><br>1. **Fakultas Teknologi Industri** dengan Program Studi:<br>   - Teknik Industri<br>   - Manajemen Rekayasa<br>   - Perdagangan Internasional<br>   - Bisnis Digital<br><br>2. **Fakultas Teknologi Informasi** dengan Program Studi:<br>   - Sistem Informasi<br>   - Teknik Komputer<br>   - Desain Komunikasi Visual<br>   - Matematika"
+      ]
+    },
+    {
+      "tag": "iteba_contact",
+      "patterns": ["Kontak ITEBA", "Nomor telepon ITEBA", "Email ITEBA", "Bagaimana cara menghubungi ITEBA?"],
+      "responses": ["Anda dapat menghubungi ITEBA melalui:<br><br>**Telepon**:<br>- +62 778 3540889<br>- +6281160600996 (WA)<br><br>**Email**: info@iteba.ac.id"]
+    },
+    {
+      "tag": "iteba_working_hours",
+      "patterns": ["Jam kerja ITEBA", "Jam operasional ITEBA", "Kapan ITEBA buka?", "Jam buka ITEBA"],
+      "responses": ["Jam kerja ITEBA adalah sebagai berikut:<br><br>**Senin - Jumat**: 08:00 - 21:00 WIB<br>**Sabtu - Minggu**: 09:00 - 15:00 WIB"]
+    },
+    {
+      "tag": "iteba_vision",
+      "patterns": ["Visi ITEBA", "Apa visi ITEBA?", "Visi Institut Teknologi Batam"],
+      "responses": ["Visi: Menjadi institusi pendidikan tinggi yang terkemuka di bidang sains, desain, bisnis, dan teknologi di Asia Pasifik dan menjadi rujukan pendidikan tinggi Indonesia tahun 2025."]
+    },
+    {
+      "tag": "iteba_mission",
+      "patterns": ["Misi ITEBA", "Apa misi ITEBA?", "Misi Institut Teknologi Batam"],
+      "responses": [
+        "Misi ITEBA:<br><br>1. Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang sains, desain, bisnis, dan teknologi yang menghasilkan visi yang unggul di bidangnya.<br>2. Menyelenggarakan dan mengembangkan penelitian di bidang sains, desain, bisnis, dan teknologi berbasis kearifan lokal.<br>3. Mengaplikasikan berbagai keahlian dan keilmuan melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br>4. Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM di bidang sains, desain, bisnis, dan teknologi.<br>5. Berperan sebagai simpul utama jejaring pendidikan tinggi sains, desain, bisnis, dan teknologi di Indonesia."
+      ]
+    },
+    {
+      "tag": "iteba_goals",
+      "patterns": ["Tujuan ITEBA", "Apa tujuan ITEBA?", "Tujuan Institut Teknologi Batam"],
+      "responses": [
+        "Tujuan ITEBA:<br><br>1. Menghasilkan lulusan di bidang sains, desain, bisnis, dan teknologi yang memiliki kompetensi, integritas, dan daya saing di tingkat nasional dan internasional.<br>2. Terwujudkan budaya meneliti di lingkungan civitas akademika yang dapat memberikan solusi untuk permasalahan bangsa.<br>3. Terwujudnya pengelolaan institut yang profesional, efektif, dan efisien yang dapat memberdayakan SDM, sarana dan prasarana, serta dana yang optimal.<br>4. Menyediakan SDM terdidik untuk memenuhi kebutuhan support industri.<br>5. Terwujudnya Good Corporate Governance yang accountable, efektif, dan efisien."
+      ]
+    },
+    {
+      "tag": "barelang_bridge_symbol",
+      "patterns": ["Apa makna dari lambang ITEBA Jembatan Barelang?", "Tolong jelaskan lambang ITEBA Jembatan Barelang.", "Arti simbol ITEBA Jembatan Barelang?", "Jembatan Barelang itu melambangkan apa?"],
+      "responses": [
+        "Jembatan Barelang (singkatan dari Batam, Rempang, Dan Galang) merupakan ikon kota Batam. Jembatan ini menghubungkan pulau-pulau yaitu Pulau Batam, Pulau Tonton, Pulau Nipah, Pulau Rempang, Pulau Galang, dan Pulau Galang Baru. Lambang Jembatan Barelang di ITEBA melambangkan semangat untuk bersatu mencapai tujuan."
+      ]
+    },
+    {
+      "tag": "owl_symbol",
+      "patterns": ["Apa makna dari lambang ITEBA burung hantu?", "Tolong jelaskan lambang ITEBA burung hantu.", "Arti simbol ITEBA burung hantu?", "Burung hantu itu melambangkan apa?"],
+      "responses": ["Burung hantu melambangkan pertambangan ilmu pengetahuan dan pendidikan bagi civitas akademika ITEBA."]
+    },
+    {
+      "tag": "globe_symbol",
+      "patterns": ["Apa makna dari lambang ITEBA bola dunia?", "Tolong jelaskan lambang ITEBA bola dunia.", "Arti simbol ITEBA bola dunia?", "Bola dunia itu melambangkan apa?"],
+      "responses": ["Bola dunia melambangkan bahwa ITEBA mempunyai keinginan untuk berkiprah di level dunia."]
+    },
+    {
+      "tag": "ribbon_symbol",
+      "patterns": ["Apa makna dari lambang ITEBA pita?", "Tolong jelaskan lambang ITEBA pita.", "Arti simbol ITEBA pita?", "Pita itu melambangkan apa?"],
+      "responses": ["Pita melambangkan keistimewaan. Yayasan VITKA dengan ITEBA berharap menjadi kampus yang istimewa di tingkat nasional dan internasional serta berkontribusi pada pembangunan bangsa dan kota Batam khususnya."]
+    },
+    {
+      "tag": "overall_symbol_meaning",
+      "patterns": ["Apa makna keseluruhan dari lambang ITEBA?", "Tolong jelaskan makna lambang ITEBA.", "Arti simbol ITEBA secara keseluruhan?", "Lambang ITEBA itu secara keseluruhan melambangkan apa?"],
+      "responses": [
+        "Lambang ITEBA secara keseluruhan mempunyai makna bahwa ITEBA secara terus menerus dengan segala kekuatannya akan menjadi pusat pengembangan sains, teknik, dan desain di Batam dan sebagai jembatan bagi seluruh civitas akademika untuk mewujudkan harapan dan impian untuk dapat berkiprah di level nasional dan internasional."
+      ]
+    },
+    {
+      "tag": "iteba_symbols",
+      "patterns": ["Jelaskan semua lambang ITEBA.", "Apa saja lambang ITEBA?", "Makna lambang-lambang di ITEBA?", "Lambang ITEBA itu apa saja?", "Tolong jelaskan semua simbol yang ada di lambang ITEBA."],
+      "responses": [
+        "Lambang ITEBA terdiri dari beberapa elemen dengan makna masing-masing:<br><br>1. **Jembatan Barelang**: Melambangkan semangat untuk bersatu mencapai tujuan. Jembatan ini menghubungkan Pulau Batam, Pulau Tonton, Pulau Nipah, Pulau Rempang, Pulau Galang, dan Pulau Galang Baru.<br><br>2. **Burung Hantu**: Melambangkan pertambangan ilmu pengetahuan dan pendidikan bagi civitas akademika ITEBA.<br><br>3. **Bola Dunia**: Melambangkan bahwa ITEBA mempunyai keinginan untuk berkiprah di level dunia.<br><br>4. **Pita**: Melambangkan keistimewaan. Yayasan VITKA dengan ITEBA berharap menjadi kampus yang istimewa di tingkat nasional dan internasional serta berkontribusi pada pembangunan bangsa dan kota Batam khususnya.<br><br>Secara keseluruhan, lambang ITEBA menunjukkan bahwa ITEBA berkomitmen untuk menjadi pusat pengembangan sains, teknik, dan desain di Batam, serta menjadi jembatan bagi seluruh civitas akademika untuk meraih harapan dan impian di level nasional dan internasional."
+      ]
+    },
+    {
+      "tag": "domestic_partnerships",
+      "patterns": [
+        "Apa saja mitra dan kolaborasi dalam negeri ITEBA?",
+        "Mitra ITEBA dalam negeri apa saja?",
+        "Kolaborasi ITEBA dengan mitra dalam negeri melibatkan siapa saja?",
+        "ITEBA bekerja sama dengan siapa saja di dalam negeri?",
+        "Sebutkan semua mitra dan kolaborasi dalam negeri ITEBA."
+      ],
+      "responses": [
+        "Mitra & Kolaborasi Dalam Negeri ITEBA meliputi:<br><br>1. **LIPI (Lembaga Ilmu Pengetahuan Indonesia)**: ITEBA bermitra dalam berbagai penelitian dan pengembangan ilmiah.<br><br>2. **Institut Teknologi Sepuluh Nopember (ITS)**: Kolaborasi dalam bidang teknologi dan pendidikan tinggi.<br><br>3. **BRIN (Badan Riset dan Inovasi Nasional)**: Kerja sama dalam riset dan inovasi teknologi.<br><br>4. **Universitas Negeri Padang (UNP)**: Kolaborasi dalam bidang pendidikan dan penelitian.<br><br>5. **Nongsa Digital Park**: Kerja sama dalam pengembangan digital dan teknologi informasi.<br><br>6. **Apple Developer Academy**: Kolaborasi dalam pengembangan aplikasi dan pendidikan teknologi.<br><br>7. **GIH (Global Internetworking Hub)**: Mitra dalam bidang teknologi informasi dan komunikasi.<br><br>8. **Aptikom (Asosiasi Pendidikan Tinggi Informatika dan Komputer)**: Kerja sama dalam bidang pendidikan teknologi informasi.<br><br>9. **PCI (Pertamina Ciptakarya Industri)**: Kolaborasi dalam bidang industri dan teknologi.<br><br>10. **KG (Kompak Group)**: Mitra dalam bidang pengembangan teknologi dan bisnis.<br><br>Selain itu, ITEBA juga bermitra dengan berbagai instansi lain seperti Badan Pusat Statistik, PT. Lintas Digital Makmur, Media Sains Indonesia, PT. Arjuna Arta Pesaka, Sanpro, Free The Sea, Ecogreen Oleochemicals, Telkom University, dan lain-lain."
+      ]
+    },
+    {
+      "tag": "international_partnerships",
+      "patterns": [
+        "Apa saja mitra dan kolaborasi luar negeri ITEBA?",
+        "Mitra ITEBA luar negeri apa saja?",
+        "Kolaborasi ITEBA dengan mitra luar negeri melibatkan siapa saja?",
+        "ITEBA bekerja sama dengan siapa saja di luar negeri?",
+        "Sebutkan semua mitra dan kolaborasi luar negeri ITEBA."
+      ],
+      "responses": [
+        "Mitra & Kolaborasi Luar Negeri ITEBA meliputi:<br><br>1. **Universiti Teknologi Malaysia (UTM)**: ITEBA bermitra dalam berbagai penelitian dan pengembangan teknologi.<br><br>2. **Universiti Sains Malaysia (USM)**: Kolaborasi dalam bidang sains dan pendidikan tinggi.<br><br>3. **25 Startups**: Kerja sama dalam pengembangan startup dan inovasi bisnis."
+      ]
+    },
+    {
+      "tag": "iteba_accreditation_certificate",
+      "patterns": ["Akreditasi kampus ini apa ya?", "Akreditasi ITEBA", "Akreditasi iteba ini apa ya?", "Saat ini akreditasi iteba apa?"],
+      "responses": ["Untuk akreditasi ITEBA saat ini berdasarkan Keputusan BAN-PT No. 713/SK/BAN-PT/Akred/PT/VIII/2021, memiliki Akdreditasi Baik"]
+    },
+    {
+      "tag": "prodi_accreditation_dkv",
+      "patterns": ["Akreditasi Program Studi Desain Komunikasi Visual apa ya?", "Akreditasi prodi dkv apa ya?", "Akreditasi DKV", "Akreditasi Desain Komunikasi Visual", "dkv akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Desain Komunikasi Visual memiliki Akreditasi Baik nih."]
+    },
+    {
+      "tag": "prodi_accreditation_information_system",
+      "patterns": ["Akreditasi Program Studi Sistem Informasi apa ya?", "Akreditasi prodi SI apa ya?", "Akreditasi SI", "Akreditasi Sistem Informasi", "SI akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Sistem Informasi memiliki Akreditasi Baik nih."]
+    },
+    {
+      "tag": "prodi_accreditation_mathematics",
+      "patterns": ["Akreditasi Program Studi Matematika apa ya?", "Akreditasi prodi MTK apa ya?", "Akreditasi MTK", "Akreditasi Matematika", "MTK akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Matematika memiliki Akreditasi Baik nih."]
+    },
+    {
+      "tag": "prodi_accreditation_computer_engineering",
+      "patterns": ["Akreditasi Program Studi Teknik Komputer apa ya?", "Akreditasi prodi TK apa ya?", "Akreditasi TK", "Akreditasi Teknik Komputer", "TK akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Teknik Komputer memiliki Akreditasi Baik nih."]
+    },
+    {
+      "tag": "prodi_accreditation_industrial_engineering",
+      "patterns": ["Akreditasi Program Studi Teknik Industri apa ya?", "Akreditasi prodi TI apa ya?", "Akreditasi TI", "Akreditasi Teknik Industri", "TI akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Teknik Industri memiliki Akreditasi Baik nih."]
+    },
+    {
+      "tag": "prodi_accreditation_management_engineering",
+      "patterns": ["Akreditasi Program Studi Manajemen Rekayasa apa ya?", "Akreditasi prodi MR apa ya?", "Akreditasi MR", "Akreditasi Manajemen Rekayasa", "MR akreditasi apa ya?"],
+      "responses": ["Untuk akreditasi Program Studi Manajemen Rekayasa memiliki Akreditasi Baik nih."]
+    },
+
+    {
+      "tag": "student_castle_vitka",
+      "patterns": [
+        "Apakah ITEBA ada asrama?",
+        "Informasi asrama ITEBA?",
+        "Deskripsi asrama mahasiswa Yayasan Vitka",
+        "Syarat tinggal di Student Castle Vitka",
+        "Informasi asrama di Batam Tourism Polytechnic",
+        "Informasi asrama di Insitut Teknologi Batam"
+      ],
+      "responses": [
+        "Student Castle Vitka (Asrama Mahasiswa Yayasan Vitka) terletak di dalam kompleks Batam Tourism Polytechnic dan Institut Teknologi Batam. Asrama mahasiswa disediakan bagi mahasiswa yang berasal dari luar kota Batam. Ada 2 bangunan asrama, tiap bangunan memiliki 35 kamar. Untuk Gedung A, tiap kamar dapat ditempati oleh 2 mahasiswa dan untuk Gedung B, tiap kamar dapat ditempati oleh 4 mahasiswa. Kamar putra dan kamar putri dipisahkan bagian gedungnya. Fasilitas yang disediakan meliputi setiap kamar dilengkapi dengan pendingin ruangan (AC), lemari, meja dan kursi belajar, tempat tidur & saluran internet, ruang tamu untuk tamu penghuni, ruang jemur di setiap lantai, serta security dan CCTV 24 Jam. Aturan yang berlaku di asrama antara lain setiap penghuni wajib memiliki finger print akses masuk asrama, mahasiswa BTP dan ITEBA, setiap kamar diisi maksimal 2 orang untuk asrama A dan maksimal 4 orang untuk asrama B, fotocopy KK/KTP/ID Card/Passport, sudah melunasi pembayaran deposit (Rp. 500.000,-) dan sewa asrama 1 tahun (bisa dicicil 2 kali untuk Pemda dan 4 kali untuk Reguler), melakukan pembayaran uang kost/sewa sesuai dengan ketentuan yang berlaku dan tepat waktu, jika telat membayar, dikenakan denda Rp. 20.000/hari, menyanggupi untuk menjaga norma-norma susila dan mematuhi tata tertib, orang tua penghuni bersedia dihubungi jika ada kendala dan bersifat urgent, penghuni wajib menggunakan pakaian sopan di area asrama, penghuni wajib tinggal selama 1 tahun periode, wajib mengikuti kegiatan sosial di lingkungan masyarakat Tiban Ayu, penghuni wajib membayar biaya kelebihan pemakaian listrik dan air. Batas maksimal penggunaan listrik adalah 180 kwh dan air 6 m³."
+      ]
+    },
+    {
+      "tag": "dorm_room_order_order",
+      "patterns": ["Tata tertib kamar asrama", "Aturan di kamar asrama", "Peraturan kamar asrama", "Tata tertib Student Castle Vitka", "Tata tertib asrama iteba", "Aturan asrama iteba", "Peraturan di Student Castle Vitka"],
+      "responses": [
+        "Berikut adalah tata tertib kamar asrama di Student Castle Vitka: Jika keluar kamar, kamar harus dikunci. MATIKAN lampu kamar dan kamar mandi ketika meninggalkan kamar. Matikan semua peralatan elektronik jika meninggalkan kamar. Penghuni TIDAK boleh mencorat-coret, melubangi, mengecat, melakukan kerusakan pada pintu, jendela, tembok kamar, dan lain-lain. Barang berharga harap disimpan dan dijaga oleh masing-masing penghuni. Pengelola tidak bertanggung jawab atas kehilangan barang-barang di dalam kamar. Penghuni wajib menjaga kebersihan kamar masing-masing. Penghuni wajib menjaga aset di dalam kamar jika rusak harap melapor. Penghuni wajib melapor jika mau menduplikat kunci yang hilang. Kerusakan aset di dalam kamar oleh penghuni wajib diganti."
+      ]
+    },
+    {
+      "tag": "exit_room_order",
+      "patterns": [
+        "Apa aturan keluar kamar di asrama?",
+        "Haruskah mematikan lampu saat keluar kamar?",
+        "Apa yang harus dilakukan sebelum meninggalkan kamar di asrama?",
+        "Apakah perlu mematikan peralatan elektronik saat keluar kamar?",
+        "Bagaimana prosedur keluar kamar di asrama?",
+        "Apa yang harus dilakukan sebelum keluar dari kamar asrama?",
+        "Boleh tidak meninggalkan kamar tanpa mematikan lampu?"
+      ],
+      "responses": ["Jika keluar kamar, kamar harus dikunci. MATIKAN lampu kamar dan kamar mandi ketika meninggalkan kamar. Matikan semua peralatan elektronik jika meninggalkan kamar."]
+    },
+    {
+      "tag": "cleanliness_and_security_rules",
+      "patterns": [
+        "Apa aturan kebersihan di asrama?",
+        "Bagaimana aturan keamanan di asrama?",
+        "Apa yang tidak boleh dilakukan penghuni di asrama?",
+        "Bagaimana cara menjaga barang berharga di asrama?",
+        "Apa tanggung jawab penghuni terhadap barang berharga?",
+        "Bolehkah mencorat-coret dinding kamar?",
+        "Apa tanggung jawab penghuni jika terjadi kerusakan di kamar?",
+        "Apa yang harus dilakukan jika kunci kamar hilang?",
+        "Bagaimana menjaga kebersihan dan keamanan di asrama?"
+      ],
+      "responses": [
+        "Penghuni TIDAK boleh mencorat-coret, melubangi, mengecat, melakukan kerusakan pada pintu, jendela, tembok kamar, dan lain-lain. Barang berharga harap disimpan dan dijaga oleh masing-masing penghuni. Pengelola tidak bertanggung jawab atas kehilangan barang-barang di dalam kamar. Penghuni wajib menjaga kebersihan kamar masing-masing. Penghuni wajib menjaga aset di dalam kamar jika rusak harap melapor. Penghuni wajib melapor jika mau menduplikat kunci yang hilang. Kerusakan aset di dalam kamar oleh penghuni wajib diganti."
+      ]
+    },
+    {
+      "tag": "electricity_and_water_rules",
+      "patterns": [
+        "Apa aturan penggunaan listrik di asrama?",
+        "Bagaimana aturan penggunaan air di asrama?",
+        "Apakah ada biaya untuk kelebihan penggunaan listrik dan air?",
+        "Bolehkah menggunakan alat elektronik untuk memasak di dalam kamar?",
+        "Bagaimana cara penggunaan air dan listrik di asrama?",
+        "Apa yang harus dilakukan jika kelebihan penggunaan listrik dan air?",
+        "Apakah boleh memasak di kamar dengan alat elektronik?",
+        "Bagaimana cara mencatat penggunaan listrik dan air di asrama?",
+        "Apakah ada sanksi untuk penggunaan listrik dan air yang berlebihan di asrama?"
+      ],
+      "responses": [
+        "Dilarang menggunakan alat-alat elektronik untuk memasak di dalam kamar. Biaya kelebihan penggunaan Listrik dan Air ditanggung penyewa, pencatatan meteran listrik dan air oleh pihak pengelola. Menggunakan air dan listrik secukupnya sesuai kebutuhan."
+      ]
+    },
+    {
+      "tag": "guest_rules",
+      "patterns": [
+        "Apa aturan menerima tamu di asrama?",
+        "Berapa batas waktu kunjungan tamu?",
+        "Apakah tamu boleh menginap di asrama?",
+        "Siapa yang bertanggung jawab atas kehilangan barang tamu?",
+        "Bolehkah tamu pria/wanita menginap di kamar?",
+        "Apa aturan mengenai tamu yang berkunjung ke asrama?",
+        "Apakah ada batas waktu untuk tamu berkunjung?",
+        "Bagaimana aturan mengenai tamu yang menginap di asrama?",
+        "Apakah ada larangan merokok untuk tamu di asrama?"
+      ],
+      "responses": [
+        "Tamu pria/wanita DIHARUSKAN diterima diruang tamu asrama. Tamu pria/wanita/family DILARANG MENGINAP di dalam kamar. Batas kunjungan bertamu di asrama maksimal 23.00. Kehilangan barang tamu tidak menjadi tanggung jawab pengelola. Tamu/keluarga penghuni wajib lapor ke pengelola/security apapun kondisinya dan kepentingannya. Tamu DILARANG merokok di dalam ruangan."
+      ]
+    },
+    {
+      "tag": "curfew_rules",
+      "patterns": [
+        "Apa aturan pulang malam di asrama?",
+        "Bagaimana prosedur izin pulang malam?",
+        "Apa sanksi bagi penghuni yang pulang malam tanpa izin?",
+        "Apa yang terjadi jika penghuni keluar malam tanpa izin?",
+        "Bagaimana cara mengurus izin pulang malam di asrama?",
+        "Apakah ada aturan khusus untuk pulang malam di asrama?",
+        "Apa yang harus dilakukan jika akan pulang malam di asrama?",
+        "Bagaimana cara melapor jika tidak bisa pulang sebelum jam malam?",
+        "Apa konsekuensi pulang malam tanpa izin di asrama?"
+      ],
+      "responses": [
+        "Pintu pagar dikunci setiap jam 23:00 Malam. Penghuni yang akan pulang malam/tidak pulang karena hal yang mendesak, harus mengisi buku izin di security asrama. Penghuni yang tidak mengisi buku izin wajib menerima sanksi-sanksi yang diberikan security jika pulang lewat dari jam 23.00 malam. Penghuni yang kedapatan keluar malam tanpa izin di atas jam 23.00 malam. Mendapatkan sanksi dari pengelola asrama."
+      ]
+    },
+    {
+      "tag": "order_order_sanctions",
+      "patterns": ["Sanksi pelanggaran tata tertib asrama", "Jenis surat peringatan di asrama", "Sanksi bagi penghuni yang melanggar aturan asrama", "Prosedur pengeluaran penghuni dari asrama"],
+      "responses": [
+        "Setiap pelanggaran diberikan sanksi berupa surat peringatan dari pengelola: SP 1 (surat peringatan pertama), yang berupa teguran tertulis, SP 2 (surat peringatan kedua), berupa teguran terakhir dari pengelola, SP 3 (surat peringatan ketiga), berupa pengeluaran penghuni dari asrama."
+      ]
+    },
+    {
+      "tag": "general_rules",
+      "patterns": [
+        "Aturan umum di asrama",
+        "Ketentuan pembayaran uang kost",
+        "Prosedur pindah dari asrama",
+        "Larangan merokok di asrama",
+        "Larangan membawa minuman keras/obat terlarang/narkotika/hewan peliharaan",
+        "Pengelola berhak mengeluarkan penghuni yang melanggar aturan",
+        "Kewajiban menjaga ketertiban dan kebersihan",
+        "Larangan melakukan tindakan kriminal",
+        "Prosedur serah terima kunci saat habis masa sewa",
+        "Jam kerja untuk penghuni baru dan penghuni lama"
+      ],
+      "responses": [
+        "Apabila kamar tidak ditempati karena alasan keluar kota dalam waktu yang cukup lama, tetapi penghuni belum memutuskan pindah, uang kost/sewa tetap dibayar penuh sesuai ketentuan.<br><br>Penghuni yang akan pindah, harap memberitahukan kepada pengelola 1 (satu) bulan sebelumnya. Jika tidak, uang deposit akan dipotong 50%.<br><br>Apabila kunci kamar hilang, dikenakan biaya Rp. 50,000.<br><br>Pengelola BERHAK memotong uang deposit jika kamar tidak dibersihkan dan dirapikan seperti semula. Uang deposit akan dikembalikan ketika kamar sudah bersih dan beres, kunci kamar sudah dikembalikan. Uang yang sudah di transfer atau dibayarkan, tidak dapat dikembalikan.<br><br>Penghuni DILARANG merokok di dalam kamar. DILARANG MEMBAWA MINUMAN KERAS/OBAT TERLARANG/NARKOTIKA/HEWAN PELIHARAAN. Pengelola berhak mengeluarkan penghuni apabila penghuni tidak mematuhi peraturan tata tertib yang berlaku.<br><br>Untuk kenyamanan sesama penghuni kost dan lingkungan sekitar, dimohon untuk tidak menimbulkan keributan dan senantiasa menjaga ketertiban, kebersihan tempat kost dan lingkungan sekitarnya.<br><br>Asrama dan fasilitasnya diperuntukkan hanya untuk penghuni resmi dan terdaftar. Untuk itu dimohon tidak membawa pihak lain untuk menginap atau menggunakan fasilitas kost lainnya.<br><br>Penghuni tidak dibenarkan melakukan tindakan KRIMINAL di lingkungan asrama.<br><br>Bagi penghuni yang sudah habis masa sewa asrama, apabila tidak akan melanjutkan kost harus segera menyerahkan kunci kepada manajemen dan mengosongkan kamar sesuai dengan tanggal habis sewa. Apabila sampai habis waktu sewa tidak menyerahkan kunci ataupun barang-barang masih ada di dalam kamar, maka akan dikenai biaya perhari sebesar Rp. 50,000.<br><br>Untuk penghuni baru yang akan masuk dan penghuni lama yang akan keluar, HARUS DILAKSANAKAN pada jam kerja, yaitu Senin s/d Sabtu jam 08.00 – 16.00."
+      ]
+    },
+    {
+      "tag": "ITEBA_values",
+      "patterns": ["Nilai ITEBA", "Nilai Institut Teknologi Batam Nilai", "Apa saja nilai-nilai ITEBA?", "Jelaskan nilai VITKA di ITEBA", "Apa arti VITKA bagi ITEBA?"],
+      "responses": [
+        "Proses pencapaian visi dan misi bagi ITEBA sebagai institusi pendidikan dilandaskan pada keyakinan (believe) akan adanya tahapan yang bermakna dan semangat (spirit) dalam menjalankan amanat program. ITEBA merumuskan nilai-nilai untuk dijiwai oleh setiap civitas akademika ITEBA. Nilai tersebut disingkat VITKA, yaitu terdiri atas:<br><br>Visioner<br>Seluruh civitas akademika ITEBA diharapkan mempunyai pandangan dan wawasan yang luas, sehingga civitas akademika ITEBA akan selalu mengikuti perkembangan dunia.<br><br>Integritas<br>Civitas akademika ITEBA selalu konsisten, yakin dan semangat dalam mewujudkan visi misi yang dilandasi oleh kejujuran serta loyalitas dalam rangka menjunjung mutu kualitas guna pencapaian visi dan implementasi misi.<br><br>Tanggungjawab<br>Civitas akademika ITEBA menjunjung tinggi nilai tanggung jawab dalam melaksanakan cita-cita ITEBA.<br><br>Kepribadian Indonesia<br>ITEBA menjunjung tinggi nilai Pancasila sebagai Kepribadian Indonesia dan diwujudkan dalam sikap mental dan tingkah laku.<br><br>Akuntabilitas<br>Civitas akademika ITEBA selalu transparan dan akuntabel terhadap hukum, proses, program dan kebijakan."
+      ]
+    },
+    {
+      "tag": "ITEBA_characteristics",
+      "patterns": ["Ciri khas ITEBA", "Apa saja ciri khas ITEBA?", "Jelaskan ciri khas ITEBA", "Apa yang membedakan ITEBA?", "Apa keunikan ITEBA?"],
+      "responses": [
+        "Dalam menjalankan perannya dalam bidang pendidikan, ITEBA berlandas pada ciri khasnya sebagai:<br><br> 1. Institut Teknologi yang mengutamakan ketrampilan (skill) dalam bidang industri dan desain sesuai standar kompetensi nasional dan internasional.<br><br> 2. Institut Teknologi yang mendidik sarjana dengan berorientasi pada kemajuan teknologi dan desain sesuai bidang profesi melalui kerjasama dengan industri terkait.<br><br> 3. Institut Teknologi yang mengutamakan konsep 'link and match' dalam memenuhi kebutuhan tenaga sarjana teknik, sains dan desain.<br><br> 4. Institut Teknologi yang berwawasan internasional dalam hal pendidikan dan riset dengan menjalin kerjasama secara luas dengan berbagai pihak yang berkompeten."
+      ]
+    },
+    {
+      "tag": "overview_industrial_engineering",
+      "patterns": ["Sekilas Prodi Teknik Industri", "Apa sekilas tentang Prodi Teknik Industri ITEBA?", "Informasi umum tentang Program Studi Teknik Industri ITEBA", "Sejarah singkat Prodi Teknik Industri ITEBA"],
+      "responses": [
+        "Program Studi Teknik Industri Institut Teknologi Batam (ITEBA) merupakan program studi Teknik Industri ke-5 yang ada di Batam. Prodi TI mendapatkan izin penyelenggaraan program studi dari Kementrian Riset, Teknologi dan Pendidikan Tinggi (KEMENRISTEKDIKTI) pada tanggal 31 Oktober 2017 dengan SK nomor 601/KPT/I/2017. Prodi TI mulai melakukan penerimaan mahasiswa baru angkatan ke-1 (pertama) pada tahun 2018 untuk pelaksanaan perkuliahan tahun akademik 2018/2019."
+      ]
+    },
+    {
+      "tag": "vision_industrial_engineering",
+      "patterns": ["Visi Keilmuan Program Studi Teknik Industri ITEBA", "Apa visi keilmuan Prodi Teknik Industri ITEBA?", "Jelaskan visi keilmuan Program Studi Teknik Industri ITEBA", "Visi Program Studi Teknik Industri ITEBA"],
+      "responses": ["“Menjadi program studi Teknik Industri dengan keahlian logistik multinasional yang terkemuka dan menjadi rujukan pendidikan tinggi di Indonesia”"]
+    },
+    {
+      "tag": "mission_industrial_engineering",
+      "patterns": ["Misi Program Studi Teknik Industri", "Apa misi Program Studi Teknik Industri?", "Jelaskan misi Program Studi Teknik Industri ITEBA", "Apa tujuan Program Studi Teknik Industri ITEBA?"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang manajemen dan teknologi industri yang dapat menghasilkan lulusan yang unggul di bidangnya.<br><br>Menyelenggarakan dan mengembangkan penelitian di bidang manajemen dan teknologi industri berbasis kearifan lokal.<br><br>Mengaplikasikan berbagai keahlian dan keilmuan melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM di bidang manajemen dan teknologi industri.<br><br>Berperan sebagai simpul utama jejaring pendidikan tinggi dalam bidang manajemen dan teknologi industri di Indonesia."
+      ]
+    },
+    {
+      "tag": "goals_industrial_engineering",
+      "patterns": ["Tujuan Program Studi Teknik Industri ITEBA", "Apa tujuan Prodi Teknik Industri ITEBA?", "Jelaskan tujuan Program Studi Teknik Industri ITEBA", "Apa sasaran dari Program Studi Teknik Industri ITEBA?"],
+      "responses": [
+        "Menghasilkan lulusan di bidang teknik industri dengan keahlian logistik yang memiliki kompetensi, integritas, dan daya saing di tingkat nasional dan internasional.<br><br>Terwujudnya budaya meneliti di lingkungan program studi teknik industri dengan keahlian logistik yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Terwujudnya pengelolaan program studi yang profesional, efektif dan efisien, yang dapat memberdayakan SDM, sarana, prasarana, dan dana yang optimal.<br><br>Menyediakan SDM terdidik untuk memenuhi kebutuhan dan support industri."
+      ]
+    },
+    {
+      "tag": "career_prospects_industrial_engineering",
+      "patterns": ["Prospek Kerja Teknik Industri", "Apa prospek kerja lulusan Teknik Industri?", "Peluang karir untuk lulusan Teknik Industri", "Profesi yang dapat diisi oleh lulusan Teknik Industri"],
+      "responses": [
+        "Lulusan program studi Teknik Industri dipersiapkan untuk diserap dalam prospek kerja dengan peluang karir, seperti:<br><br>1. Project Manager<br>2. Engineering Manager<br>3. Quality Controller<br>4. Product Analyst<br>5. Health, Safety, and Environment (HSE)<br> Dan lain sebagainya."
+      ]
+    },
+    {
+      "tag": "overview_engineering_management",
+      "patterns": ["Sekilas Prodi Manajemen Rekayasa", "Apa itu Manajemen Rekayasa?", "Informasi tentang Program Studi Manajemen Rekayasa", "Penjelasan singkat tentang Manajemen Rekayasa"],
+      "responses": [
+        "Manajemen Rekayasa (Engineering Management) adalah cabang keilmuan yang diakui oleh ABET (Accreditation Board for Engineering and Technology). Cabang ilmu ini menggabungkan teknik/rekayasa dengan manajemen untuk menyelesaikan tantangan dalam sistem yang kompleks. Aspek teknik terlihat dari penerapan matematika dan ilmu pengetahuan alam, sedangkan aspek manajemen mencakup analisis finansial dan manajemen sumber daya manusia.<br><br>Contoh penerapan Manajemen Rekayasa terdapat pada industri, mencakup proses dari inovasi hingga konsumsi produk. Fokus utamanya adalah pada tahap hulu, yaitu riset dasar dan desain produk atau jasa yang memenuhi kebutuhan manusia."
+      ]
+    },
+    {
+      "tag": "vision_engineering_management",
+      "patterns": ["Visi Keilmuan Program Studi Manajemen Rekayasa ITEBA", "Apa visi keilmuan Prodi Manajemen Rekayasa ITEBA?", "Jelaskan visi keilmuan Program Studi Manajemen Rekayasa ITEBA", "Visi Program Studi Manajemen Rekayasa ITEBA"],
+      "responses": ["“Menjadi program studi unggul di bidang manajemen rekayasa, menjadi rujukan rumpun ilmu yang sejenis di Indonesia dan berperan aktif dalam pengembangan Industri Maritim.”"]
+    },
+    {
+      "tag": "mission_engineering_management",
+      "patterns": ["Misi Program Studi Manajemen Rekayasa ITEBA", "Apa misi Prodi Manajemen Rekayasa ITEBA?", "Jelaskan misi Program Studi Manajemen Rekayasa ITEBA", "Misi Program Studi Manajemen Rekayasa"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang manajemen rekayasa Industri Maritim yang dapat menghasilkan lulusan yang unggul di bidangnya.<br><br>Menyelenggarakan dan mengembangkan penelitian di bidang manajemen rekayasa Industri Maritim yang berbasis kearifan lokal.<br><br>Mengaplikasikan berbagai keahlian dan keilmuan melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM di bidang manajemen rekayasa Industri Maritim.<br><br>Berperan sebagai simpul utama jejaring pendidikan tinggi manajemen rekayasa dengan Industri Maritim di Indonesia."
+      ]
+    },
+    {
+      "tag": "goals_engineering_management",
+      "patterns": ["Tujuan Program Studi Manajemen Rekayasa ITEBA", "Apa tujuan Prodi Manajemen Rekayasa ITEBA?", "Jelaskan tujuan Program Studi Manajemen Rekayasa ITEBA", "Tujuan Program Studi Manajemen Rekayasa"],
+      "responses": [
+        "Menghasilkan lulusan di bidang manajemen rekayasa Industri Maritim yang memiliki kompetensi, integritas, dan daya saing di tingkat nasional dan internasional.<br><br>Terwujudnya budaya meneliti di lingkungan program studi manajemen rekayasa Industri Maritim yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Terwujudnya pengelolaan program studi yang profesional, efektif dan efisien, yang dapat memberdayakan SDM, sarana, prasarana, dan dana yang optimal.<br><br>Menyediakan SDM terdidik untuk memenuhi kebutuhan dan support industri.<br><br>Terwujudnya Good Corporate Governance yang accountable, efektif dan efisien."
+      ]
+    },
+    {
+      "tag": "career_prospects_engineering_management",
+      "patterns": ["Prospek Kerja Manajemen Rekayasa", "Apa prospek kerja lulusan Manajemen Rekayasa?", "Peluang karir untuk lulusan Manajemen Rekayasa", "Profesi yang dapat diisi oleh lulusan Manajemen Rekayasa"],
+      "responses": [
+        "Lulusan program studi Manajemen Rekayasa dipersiapkan untuk diserap dalam prospek kerja dengan peluang karir, seperti:<br><br>1. Desain/pemberian nilai tambah terhadap produk yang sesuai dengan riset pasar<br>2. Manager operasional pabrik/logistik/method engineering/ergonomi/dll<br>3. Perancang sistem/produk di pabrik (otomatisasi/lay out/kaizen/lean/6-sigma/dll)<br>4. Konsultan pabrik (efisiensi/produktivitas/proses kontrol/bisnis proses/dll.)<br>5. Penggagas startup/wiraswasta."
+      ]
+    },
+    {
+      "tag": "overview_international_trade",
+      "patterns": ["Sekilas Prodi Perdagangan Internasional", "Apa itu Perdagangan Internasional?", "Informasi tentang Program Studi Perdagangan Internasional", "Penjelasan singkat tentang Perdagangan Internasional"],
+      "responses": [
+        "Program Studi Perdagangan Internasional mempelajari ilmu matematika, sains, dan bisnis serta memiliki soft skill dalam bernegosiasi, berkomunikasi, dan menyusun strategi di bidang Finance, Marketing, dan Resource. Prodi ini dirancang untuk menciptakan individu yang mampu menghadapi kompleksitas proses bisnis berskala nasional dan internasional, dengan kurikulum yang mengombinasikan teori konseptual dan pengalaman bisnis nyata di dunia bisnis global."
+      ]
+    },
+    {
+      "tag": "vision_international_trade",
+      "patterns": [
+        "Visi Program Studi Perdagangan Internasional ITEBA",
+        "Apa visi Prodi Perdagangan Internasional ITEBA?",
+        "Jelaskan visi Program Studi Perdagangan Internasional ITEBA",
+        "Visi Program Studi Perdagangan Internasional ITEBA"
+      ],
+      "responses": ["“Menjadi program studi yang diakui dan dipercaya di bidang ilmu manajemen bisnis internasional dan kewirausahaan baik tingkat nasional maupun internasional 2025.”"]
+    },
+    {
+      "tag": "mission_international_trade",
+      "patterns": ["Misi Program Studi Perdagangan Internasional ITEBA", "Apa misi Prodi Perdagangan Internasional ITEBA?", "Jelaskan misi Program Studi Perdagangan Internasional ITEBA", "Misi Program Studi Perdagangan Internasional"],
+      "responses": [
+        "Menyelenggarakan pendidikan di bidang manajemen bisnis internasional dan kewirausahaan untuk menghasilkan lulusan yang profesional sesuai tuntutan dunia usaha dan dunia pasar kerja baik nasional maupun global.<br><br>Melakukan penelitian dan kegiatan pengembangan ilmu pengetahuan yang unggul di bidang manajemen bisnis internasional dan kewirausahaan yang bermanfaat bagi masyarakat akademik maupun dunia usaha.<br><br>Melaksanakan pengabdian kepada masyarakat dalam rangka penerapan ilmu pengetahuan dan teknologi agar mampu mendorong kemandirian masyarakat dunia usaha dan masyarakat umum lainnya secara berkelanjutan.<br><br>Menyelenggarakan tata kelola program studi yang baik dan bersih serta menjalin kerjasama dengan lembaga lain di tingkat nasional maupun internasional untuk mendukung pelaksanaan proses pembelajaran, penelitian dan publikasi karya ilmiah, serta pengabdian kepada masyarakat di bidang manajemen."
+      ]
+    },
+    {
+      "tag": "goals_international_trade",
+      "patterns": [
+        "Tujuan Program Studi Perdagangan Internasional ITEBA",
+        "Apa tujuan Prodi Perdagangan Internasional ITEBA?",
+        "Jelaskan tujuan Program Studi Perdagangan Internasional ITEBA",
+        "Tujuan Program Studi Perdagangan Internasional"
+      ],
+      "responses": [
+        "Agar terwujudnya pendidikan yang unggul dan inovatif yang mampu menghasilkan lulusan yang kompeten, unggul, profesional, dan bermartabat yang diakui oleh dunia usaha dan dunia kerja nasional dan internasional.<br><br>Terlaksananya penelitian dan pengembangan ilmu pengetahuan dan teknologi yang diakui di bidang manajemen bisnis internasional dan kewirausahaan.<br><br>Terselenggaranya kegiatan pengabdian masyarakat yang mampu mendorong kemandirian dunia usaha secara berkelanjutan dalam bidang manajemen bisnis dan kewirausahaan untuk mewujudkan kesejahteraan bagi masyarakat umumnya.<br><br>Terwujudnya good university governance untuk mendukung implementasi misi perguruan tinggi dalam membangun masyarakat akademik yang kuat, mandiri, dan berdaya saing.<br><br>Terjalinnya kolaborasi dengan mitra untuk meningkatkan relevansi pelaksanaan tridharma perguruan tinggi."
+      ]
+    },
+    {
+      "tag": "values_international_trade",
+      "patterns": [
+        "Nilai-nilai Program Studi Perdagangan Internasional ITEBA",
+        "Apa nilai-nilai Prodi Perdagangan Internasional ITEBA?",
+        "Jelaskan nilai-nilai Program Studi Perdagangan Internasional ITEBA",
+        "Nilai-nilai Program Studi Perdagangan Internasional"
+      ],
+      "responses": [
+        "Program studi Manajemen Bisnis Internasional ITEBA berusaha untuk mencapai visi dan misinya dengan mengacu kepada nilai-nilai strategik yang berlandaskan moral dan etika yaitu:<br><br>Integritas: Menjunjung tinggi prinsip kejujuran, konsistensi perkataan dan perbuatan, komitmen pada janji, keberanian moral dalam membela kebenaran, kepentingan organisasi di atas kepentingan kelompok dan individu, serta amanah dan bertanggung jawab.<br><br>Profesional: Memainkan perannya yang mengacu pada standar mutu dan kinerja, kesesuaian dengan kompetensi, semangat pengembangan diri secara berkelanjutan dan berorientasi pelanggan yang dapat dipertanggungjawabkan.<br><br>Objektif dan adil: Menghormati semua warga negara, tanpa membedakan fungsi, status dan jabatan, serta tidak membeda-bedakan agama, ras, suku, dan jenis kelamin, serta menghargai dan menilai kinerja secara obyektif dan adil.<br><br>Kebebasan Akademik: Mengakui konsep dan praktik kebebasan akademik sebagai perilaku sentral yang harus dijunjung tinggi dalam pembelajaran, pengajaran, penelitian, dan keilmuan.<br><br>Kepedulian kepada masyarakat: Mempunyai komitmen yang tinggi untuk berpartisipasi dan aktif terlibat dalam menyelesaikan berbagai masalah bisnis, manajemen, kewirausahaan, dan persoalan ekonomi lainnya yang dihadapi masyarakat."
+      ]
+    },
+    {
+      "tag": "career_prospects_international_trade",
+      "patterns": [
+        "Prospek Karir Perdagangan Internasional",
+        "Apa prospek kerja lulusan Perdagangan Internasional?",
+        "Peluang karir untuk lulusan Perdagangan Internasional",
+        "Profesi yang dapat diisi oleh lulusan Perdagangan Internasional"
+      ],
+      "responses": [
+        "Lulusan program studi ini memiliki peluang bekerja di perusahaan nasional dan multinasional, perusahaan swasta maupun BUMN berbagai sektor (seperti perbankan, jasa, manufaktur), start-up digital/non digital, instansi pemerintah dan daerah pada berbagai tingkatan dan posisi lainnya yang menuntut kemampuan manajerial, kepemimpinan, dan intrapreneur. Lulusan Program Studi Manajemen Bisnis Internasional juga dibekali kemampuan berwirausaha maupun menjadi konsultan bisnis.<br><br>Secara spesifik, profesi tamatan Program Studi Manajemen Bisnis Internasional dapat berkarir sebagai:<br><br>1. Analis Bisnis Internasional (International Business Analyst)<br>2. Perencana dan Pengembangan Bisnis Internasional (International Business Planning and Development)<br>3. Analis Keuangan Bisnis Internasional (International Business Credit Analyst)<br>4. Analis Pemasaran Internasional (Internasional Marketing Analyst)<br>5. Konsultan Perdagangan dan Keuangan Internasional (Consultant for International Finance and Trade)<br>6. Manajer Lisensi dan Wira Laba Internasional (International Licensing and Franchising Manager)<br>7. Manajer Proyek Usaha Patungan Internasional (International Joint Venture Project Manager)<br>8. Analis Manajemen Risiko Global (Global Risk Management Analyst)<br>9. Manajer Perusahaan Multinasional (Multinational Company Manager)<br>10. Manajer Usaha Ekspor Impor (Export-Import Manager)"
+      ]
+    },
+    {
+      "tag": "overview_digital_business",
+      "patterns": ["Sekilas Prodi Bisnis Digital", "Apa itu Bisnis Digital?", "Informasi tentang Program Studi Bisnis Digital", "Penjelasan singkat tentang Bisnis Digital"],
+      "responses": [
+        "Program Studi Bisnis Digital ITEBA dirancang untuk mempersiapkan lulusan dengan keterampilan dalam mengelola bisnis menggunakan platform digital, serta kemampuan financial technology yang relevan dalam keuangan digital. Fokus utama pada pengembangan kemampuan analisis data untuk mendukung keputusan bisnis yang informatif. Kurikulum berbasis kompetensi membekali hardskill dan softskill sesuai kebutuhan industri bisnis digital, menggunakan metode pembelajaran interaktif dan studi kasus dengan dosen tamu dari praktisi industri."
+      ]
+    },
+    {
+      "tag": "vision_digital_business",
+      "patterns": ["Visi Program Studi Bisnis Digital ITEBA", "Apa visi Prodi Bisnis Digital ITEBA?", "Jelaskan visi Program Studi Bisnis Digital ITEBA", "Visi Program Studi Bisnis Digital"],
+      "responses": ["Menjadi program studi unggul, inovatif dalam bidang bisnis digital serta mampu memberikan kontribusi terhadap transformasi dan pertumbuhan industri digital secara nasional dan global."]
+    },
+    {
+      "tag": "mission_digital_business",
+      "patterns": ["Misi Program Studi Bisnis Digital ITEBA", "Apa misi Prodi Bisnis Digital ITEBA?", "Jelaskan misi Program Studi Bisnis Digital ITEBA", "Misi Program Studi Bisnis Digital"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan yang berkualitas didukung kurikulum yang senantiasa diperbaharui untuk menghadapi tantangan dunia bisnis digital.<br><br>Membangun kemitraan yang kokoh dengan industri untuk memberikan dukungan, wawasan terkait dengan bisnis digital.<br><br>Mempersiapkan lulusan tangguh, inovatif, dan berdaya saing tinggi untuk menghadapi tantangan dunia bisnis digital.<br><br>Menyelenggarakan dan mengembangkan penelitian dalam riset dan publikasi ilmiah dalam bidang bisnis digital untuk memajukan pengetahuan yang dapat diterapkan dalam solusi untuk permasalahan bisnis digital.<br><br>Mengimplementasikan keahlian dan kemampuan berwujud pengabdian kepada masyarakat dalam bidang bisnis digital."
+      ]
+    },
+    {
+      "tag": "goals_digital_business",
+      "patterns": ["Tujuan Program Studi Bisnis Digital ITEBA", "Apa tujuan Prodi Bisnis Digital ITEBA?", "Jelaskan tujuan Program Studi Bisnis Digital ITEBA", "Tujuan Program Studi Bisnis Digital"],
+      "responses": [
+        "Memfasilitasi pertumbuhan startup bisnis dengan merancang produk yang inovatif.<br><br>Memberikan pemahaman tentang teknologi keuangan dan mempercepat pengembangan keterampilan yang relevan di sektor keuangan sehingga para lulusan dapat mengintegrasikan inovasi fintech ke dalam strategi bisnis secara efektif.<br><br>Memberikan pengalaman dalam pengembangan dan penerapan aplikasi teknologi terbaru untuk meningkatkan kecepatan dan validitas pengambilan keputusan bisnis.<br><br>Menyediakan pengetahuan dan keahlian dalam pemasaran digital yang efektif melalui media sosial dan analisis data pemasaran.<br><br>Memberikan pemahaman menganalisis, dan menginterpretasikan data digital mendukung pengambilan keputusan bisnis yang didasarkan pada bukti informasi."
+      ]
+    },
+    {
+      "tag": "career_prospects_digital_business",
+      "patterns": ["Prospek Karir Bisnis Digital", "Apa prospek kerja lulusan Bisnis Digital?", "Peluang karir untuk lulusan Bisnis Digital", "Profesi yang dapat diisi oleh lulusan Bisnis Digital"],
+      "responses": ["Lulusan program studi Bisnis Digital memiliki prospek kerja sebagai Digital Entrepreneur, Finance Technology, Business Intelligence Analyst, Digital Business Analyst, dan Marketing Analyst."]
+    },
+    {
+      "tag": "overview_visual_communication_design",
+      "patterns": ["Sekilas Prodi Desain Komunikasi Visual", "Apa itu Desain Komunikasi Visual?", "Informasi tentang Program Studi Desain Komunikasi Visual", "Penjelasan singkat tentang Desain Komunikasi Visual"],
+      "responses": [
+        "Desain Komunikasi Visual merupakan disiplin ilmu yang berbasis estetika, sosial, dan teknologi informasi. Program studi ini menggabungkan estetika, humanitas, dan teknologi untuk menciptakan desain multimedia yang optimal. Mahasiswa diharapkan memiliki kemampuan menciptakan desain berdasarkan teori estetika, humanitas, dan penggunaan teknologi komputer serta digital."
+      ]
+    },
+    {
+      "tag": "vision_visual_communication_design",
+      "patterns": ["Visi Program Studi Desain Komunikasi Visual ITEBA", "Apa visi Prodi Desain Komunikasi Visual ITEBA?", "Jelaskan visi Program Studi Desain Komunikasi Visual ITEBA", "Visi Program Studi Desain Komunikasi Visual"],
+      "responses": ["Menjadi Prodi yang terkemuka di Asia Pasifik pada bidang DKV dengan kekhasan berbasis Desain Grafis dan Multimedia digital dalam teknologi informasi dan menjadi rujukan pendidikan tinggi di Indonesia pada Tahun 2025."]
+    },
+    {
+      "tag": "mission_visual_communication_design",
+      "patterns": ["Misi Program Studi Desain Komunikasi Visual ITEBA", "Apa misi Prodi Desain Komunikasi Visual ITEBA?", "Jelaskan misi Program Studi Desain Komunikasi Visual ITEBA", "Misi Program Studi Desain Komunikasi Visual"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang Desain Komunikasi Visual khususnya multimedia dan Desain Grafis yang dapat menghasilkan lulusan yang unggul di bidangnya.<br><br>Menyelenggarakan dan mengembangkan penelitian dibidang Desain Komunikasi Visual khususnya multimedia dan Desain Grafis dan berbasis kearifan lokal.<br><br>Mengaplikasikan berbagai keahlian dan keilmuan dibidang Desain Komunikasi Visual khususnya multimedia dan Desain Grafis melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM bidang Desain Komunikasi Visual khususnya multimedia dan Desain Grafis.<br><br>Berperan sebagai simpul utama jejaring pendidikan tinggi di Desain Komunikasi Visual khususnya multimedia dan Desain Grafis di Indonesia."
+      ]
+    },
+    {
+      "tag": "goals_visual_communication_design",
+      "patterns": ["Tujuan Program Studi Desain Komunikasi Visual ITEBA", "Apa tujuan Prodi Desain Komunikasi Visual ITEBA?", "Jelaskan tujuan Program Studi Desain Komunikasi Visual ITEBA", "Tujuan Program Studi Desain Komunikasi Visual"],
+      "responses": [
+        "Lulusan di bidang desain yang memiliki kompetensi, integritas dan daya saing di tingkat global.<br><br>Terwujudnya budaya meneliti di lingkungan civitas akademik ITEBA yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Terwujudnya pengelolaan program studi yang profesional, efektif dan efisien yang dapat memberdayakan SDM, sarana prasarana dan dana yang optimal.<br><br>Menyediakan SDM terdidik untuk memenuhi kebutuhan dan support industri di bidang desain.<br><br>Terwujudnya Good Corporate Governance yang accountable, efektif dan efisien."
+      ]
+    },
+    {
+      "tag": "career_prospects_visual_communication_design",
+      "patterns": ["Prospek Kerja Desain Komunikasi Visual", "Apa prospek kerja lulusan Desain Komunikasi Visual?", "Peluang karir untuk lulusan Desain Komunikasi Visual", "Profesi yang dapat diisi oleh lulusan Desain Komunikasi Visual"],
+      "responses": [
+        "Lulusan program studi Desain Komunikasi Visual memiliki prospek kerja di berbagai bidang seperti desainer grafis, animator, desainer web, desainer UI/UX, art director, fotografer, ilustrator, dan berbagai posisi dalam industri kreatif lainnya."
+      ]
+    },
+    {
+      "tag": "overview_mathematics",
+      "patterns": ["Sekilas Prodi Matematika", "Apa itu Program Studi Matematika?", "Informasi tentang Program Studi Matematika ITEBA", "Penjelasan singkat tentang Program Studi Matematika"],
+      "responses": [
+        "Program Studi Matematika ITEBA lebih diarahkan ke cabang ilmu matematika terapan, yaitu Statistika dan Aktuaria. Statistika diperlukan untuk seluruh sistem perusahaan, baik swasta maupun pemerintah. Aktuaria mengaplikasikan ilmu keuangan dengan statistika untuk menyelesaikan persoalan bisnis aktual."
+      ]
+    },
+    {
+      "tag": "vision_mathematics",
+      "patterns": ["Visi Program Studi Matematika ITEBA", "Apa visi Prodi Matematika ITEBA?", "Jelaskan visi Program Studi Matematika ITEBA", "Visi Program Studi Matematika"],
+      "responses": [
+        "Menjadi Program Studi yang terkemuka di Asia Pasifik dalam bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria berbasis teknologi informasi, serta menjadi rujukan keilmuan pendidikan tinggi di Indonesia, dan berkontribusi dalam pembangunan bangsa pada tahun 2025."
+      ]
+    },
+    {
+      "tag": "mission_mathematics",
+      "patterns": ["Misi Program Studi Matematika ITEBA", "Apa misi Prodi Matematika ITEBA?", "Jelaskan misi Program Studi Matematika ITEBA", "Misi Program Studi Matematika"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria.<br><br>Menyelenggarakan dan mengembangkan penelitian di bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria berbasis kearifan lokal dan internasional.<br><br>Mengaplikasikan berbagai keahlian dan keilmuan melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria.<br><br>Berperan sebagai simpul utama jejaring pendidikan tinggi di bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria di Indonesia."
+      ]
+    },
+    {
+      "tag": "goals_mathematics",
+      "patterns": ["Tujuan Program Studi Matematika ITEBA", "Apa tujuan Prodi Matematika ITEBA?", "Jelaskan tujuan Program Studi Matematika ITEBA", "Tujuan Program Studi Matematika"],
+      "responses": [
+        "Menghasilkan lulusan di bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria yang berbudi pekerti, memiliki kompetensi, integritas dan daya saing di tingkat nasional dan internasional.<br><br>Terwujudnya budaya meneliti di lingkungan program studi matematika yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Terwujudnya pengelolaan program studi yang profesional, efektif dan efisien yang dapat memberdayakan SDM, sarana prasarana dan dana yang optimal.<br><br>Menyediakan SDM terdidik untuk memenuhi kebutuhan dan support industri di bidang matematika dengan keutamaan bidang ilmu Statistika & Aktuaria yang berbasiskan teknologi informasi.<br><br>Terwujudnya Good Corporate Governance program studi yang accountable, efektif dan efisien."
+      ]
+    },
+    {
+      "tag": "career_prospects_mathematics",
+      "patterns": ["Prospek Karir Matematika", "Apa prospek kerja lulusan Matematika?", "Peluang karir untuk lulusan Matematika", "Profesi yang dapat diisi oleh lulusan Matematika"],
+      "responses": ["Lulusan program studi Matematika memiliki prospek kerja sebagai Ahli Statistika, Aktuaris, Tenaga Pengajar, Peneliti atau Ahli Matematika, Pegawai Bank, Pengusaha, dan bekerja di Lembaga Survey."]
+    },
+    {
+      "tag": "overview_information_systems",
+      "patterns": ["Sekilas Prodi Sistem Informasi", "Apa itu Program Studi Sistem Informasi?", "Informasi tentang Program Studi Sistem Informasi ITEBA", "Penjelasan singkat tentang Program Studi Sistem Informasi"],
+      "responses": [
+        "Program Studi Sistem Informasi (SI) mempelajari cara mendesain sistem yang tepat sesuai dengan tujuan organisasi atau kebutuhan perusahaan. Mahasiswa dididik untuk memahami kebutuhan klien akan sistem Teknologi Informasi (TI) dan diarahkan untuk mengembangkan, memanfaatkan, serta mengelola software dan hardware dalam dunia bisnis maupun perseorangan. Prodi ini membekali mahasiswa dengan ilmu pemrograman, manajemen, dan bisnis."
+      ]
+    },
+    {
+      "tag": "vision_information_systems",
+      "patterns": ["Visi Program Studi Sistem Informasi ITEBA", "Apa visi Prodi Sistem Informasi ITEBA?", "Jelaskan visi Program Studi Sistem Informasi ITEBA", "Visi Program Studi Sistem Informasi"],
+      "responses": ["Menjadi Program Studi yang terkemuka di bidang Sistem Informasi, di Indonesia dan Internasional serta menjadi rujukan Prodi Sistem Informasi di daerah Kepulauan Riau."]
+    },
+    {
+      "tag": "mission_information_systems",
+      "patterns": ["Misi Program Studi Sistem Informasi ITEBA", "Apa misi Prodi Sistem Informasi ITEBA?", "Jelaskan misi Program Studi Sistem Informasi ITEBA", "Misi Program Studi Sistem Informasi"],
+      "responses": [
+        "Menjadikan dan mengembangkan pendidikan dan pembelajaran di bidang Sistem Informasi yang dapat menghasilkan lulusan yang unggul di bidangnya.<br><br>Menyelenggarakan dan mengembangkan penelitian di bidang Sistem Informasi.<br><br>Mengaplikasikan keahlian dan keilmuan di bidang Sistem Informasi untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu untuk mendorong kemandirian pembangunan sumber daya manusia di bidang Sistem Informasi.<br><br>Berperan sebagai simpul utama jejaring di bidang Sistem Informasi di Indonesia dan Internasional."
+      ]
+    },
+    {
+      "tag": "goals_information_systems",
+      "patterns": ["Tujuan Program Studi Sistem Informasi ITEBA", "Apa tujuan Prodi Sistem Informasi ITEBA?", "Jelaskan tujuan Program Studi Sistem Informasi ITEBA", "Tujuan Program Studi Sistem Informasi"],
+      "responses": [
+        "Menghasilkan lulusan di bidang Sistem Informasi yang memiliki kompetensi, integritas dan daya saing di tingkat nasional dan internasional.<br><br>Terwujudnya budaya meneliti di bidang Sistem Informasi yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Terwujudnya pengelolaan program studi yang profesional, efektif dan efisien yang dapat memberdayakan SDM, sarana prasarana dan dana yang optimal.<br><br>Terwujudnya Good Department Governance yang accountable, efektif, dan efisien."
+      ]
+    },
+    {
+      "tag": "career_prospects_information_systems",
+      "patterns": ["Prospek Karir Sistem Informasi", "Apa prospek kerja lulusan Sistem Informasi?", "Peluang karir untuk lulusan Sistem Informasi", "Profesi yang dapat diisi oleh lulusan Sistem Informasi"],
+      "responses": [
+        "Perkembangan teknologi informasi yang sangat pesat membuka peluang kerja bagi lulusan Sistem Informasi menjadi sangat luas! Lulusan SI memiliki prospek yang sangat bagus untuk bekerja di berbagai instansi pemerintah dan perusahaan. Mereka sangat dicari untuk memenuhi kebutuhan pembuatan dan pengembangan software yang dibutuhkan perusahaan. Lulusan SI dapat berprofesi sebagai:<br>- Application Developer: Mengembangkan aplikasi yang membantu berbagai kebutuhan.<br>- Computer Engineer: Merancang dan mengembangkan perangkat keras dan perangkat lunak komputer.<br>- Data Analyst: Menganalisis data untuk memberikan wawasan yang berharga.<br>- UI/UX Developer: Menciptakan antarmuka pengguna yang menarik dan mudah digunakan.<br>- Database Administrator: Mengelola dan memelihara basis data agar berjalan lancar.<br>- Web Developer: Membangun dan memelihara situs web yang fungsional dan menarik."
+      ]
+    },
+    {
+      "tag": "overview_computer_engineering",
+      "patterns": ["Sekilas Prodi Teknik Komputer", "Apa itu Program Studi Teknik Komputer?", "Informasi tentang Program Studi Teknik Komputer ITEBA", "Penjelasan singkat tentang Program Studi Teknik Komputer"],
+      "responses": [
+        "Teknik Komputer adalah disiplin engineering yang mengintegrasikan desain dengan implementasi perangkat keras (elektronika) dan perangkat lunak. Program studi ini mempelajari hardware komputer serta berbagai peralatan elektronik lainnya, baik dari sisi software maupun hardware. Perkembangan Teknik Komputer mengikuti industri elektronik, menjadikannya prioritas dalam pendidikan tinggi untuk berbagai bidang seperti industri, institusi, pemerintahan, dan militer."
+      ]
+    },
+    {
+      "tag": "vision_computer_engineering",
+      "patterns": ["Visi Program Studi Teknik Komputer ITEBA", "Apa visi Prodi Teknik Komputer ITEBA?", "Jelaskan visi Program Studi Teknik Komputer ITEBA", "Visi Program Studi Teknik Komputer"],
+      "responses": ["Menjadi program studi yang terkemuka di bidang Teknik Komputer di Asia Tenggara dan menjadi rujukan pendidikan tinggi di daerah Kepulauan Riau serta berkontribusi dalam pembangunan bangsa."]
+    },
+    {
+      "tag": "mission_computer_engineering",
+      "patterns": ["Misi Program Studi Teknik Komputer ITEBA", "Apa misi Prodi Teknik Komputer ITEBA?", "Jelaskan misi Program Studi Teknik Komputer ITEBA", "Misi Program Studi Teknik Komputer"],
+      "responses": [
+        "Menyelenggarakan dan mengembangkan pendidikan dan pengajaran di bidang Teknik Komputer untuk menghasilkan lulusan yang unggul dibidangnya dan menjunjung tinggi integritas.<br><br>Menyelenggarakan dan mengembangkan penelitian di bidang Teknik Komputer berbasis kearifan lokal.<br><br>Mengaplikasikan berbagai keahlian dan keilmuan melalui pengabdian kepada masyarakat untuk meningkatkan kesejahteraan masyarakat.<br><br>Menjadi agen pembaharu dalam mendorong kemandirian pembangunan SDM bidang Teknik Komputer.<br><br>Berperan sebagai simpul utama jejaring pendidikan tinggi Teknik Komputer di Indonesia dan internasional."
+      ]
+    },
+    {
+      "tag": "goals_computer_engineering",
+      "patterns": ["Tujuan Program Studi Teknik Komputer ITEBA", "Apa tujuan Prodi Teknik Komputer ITEBA?", "Jelaskan tujuan Program Studi Teknik Komputer ITEBA", "Tujuan Program Studi Teknik Komputer"],
+      "responses": [
+        "Menghasilkan lulusan di bidang Teknik Komputer yang memiliki kompetensi, integritas dan daya saing di tingkat nasional dan internasional.<br><br>Terwujudnya budaya meneliti di lingkungan civitas akademika Prodi Teknik Komputer yang mampu mengembangkan ilmu pengetahuan dan dapat memberikan solusi terhadap permasalahan bangsa.<br><br>Membantu Institusi dalam mewujudkan tata kelola yang profesional, efektif dan efisien yang dapat memberdayakan SDM, sarana prasarana dan dana yang optimal.<br><br>Membantu Institusi dalam mewujudkan good university governance yang accountable, efektif, efisien.<br><br>Menghasilkan lulusan yang memiliki kemampuan untuk memegang peranan penting di tingkat operasi atau manajerial dalam berbagai organisasi.<br><br>Memberikan kontribusi yang mendukung pembangunan nasional yang berkelanjutan melalui kegiatan pengabdian yang berfokus pada peningkatan kualitas kehidupan masyarakat dan peningkatan kinerja dan daya saing industri.<br><br>Membangun jejaring dengan berbagai lembaga dan industri, baik di tingkat nasional maupun internasional, untuk mendukung kegiatan pendidikan, penelitian, dan pengabdian masyarakat serta menjembatani para lulusan memasuki dunia kerja."
+      ]
+    },
+    {
+      "tag": "career_prospects_computer_engineering",
+      "patterns": ["Prospek Karir Teknik Komputer", "Apa prospek kerja lulusan Teknik Komputer?", "Peluang karir untuk lulusan Teknik Komputer", "Profesi yang dapat diisi oleh lulusan Teknik Komputer"],
+      "responses": [
+        "Lulusan program studi Teknik Komputer memiliki berbagai prospek kerja yang menarik! Anda bisa bekerja sebagai:<br>- IoT Engineer: Mengembangkan dan mengelola perangkat yang terhubung dengan Internet of Things.<br>- Network Engineer: Merancang dan memelihara jaringan komputer.<br>- Network Administrator: Mengelola dan memastikan keamanan serta kinerja jaringan.<br>- Software Engineer: Membangun dan memelihara perangkat lunak yang inovatif.<br>- Automation Engineer: Menerapkan teknologi otomatisasi di berbagai bidang industri.<br>- Cloud Engineer: Mengelola dan mengembangkan solusi berbasis cloud untuk berbagai kebutuhan."
+      ]
+    },
+    {
+      "tag": "lecturer_faculty_industrial_engineering",
+      "patterns": ["Dosen Teknik Industri ITEBA", "Siapa saja dosen di Prodi Teknik Industri ITEBA?", "Daftar dosen Teknik Industri ITEBA", "Siapa dosen Teknik Industri di ITEBA?"],
+      "responses": [
+        "Berikut adalah daftar dosen Teknik Industri:<br><br>1. Dr. Eng. Ansarullah Lawi, M.Eng<br>2. Nurul Ilmi, S.T., M.T<br>3. Yopy Mardiansyah, S.Pd., M.Si<br>4. Taufiq Rahman, S.T., M.T<br>5. Sadiq Ardo Wibowo, S.T., M.T<br>6. Dinda Okta Dwiyanti Ridwan Gucci, S.T., M.T<br>7. Dr. Reski Septiana, S.T., M.T<br>8. Amirah Nova Khairiyah Pane, M.Sc<br>9. Siti Nur Maulidina, S.T., M.T.<br><br>Mereka adalah pengajar yang sangat berkompeten di bidangnya!"
+      ]
+    },
+    {
+      "tag": "lecturer_faculty_engineering_management",
+      "patterns": ["Dosen Manajemen Rekayasa ITEBA", "Siapa saja dosen di Prodi Manajemen Rekayasa ITEBA?", "Daftar dosen Manajemen Rekayasa ITEBA", "Siapa dosen Manajemen Rekayasa di ITEBA?"],
+      "responses": [
+        "Berikut adalah daftar dosen Manajemen Rekayasa:<br><br>1. Dr. Ir. M. Ansyar Bora, S.T, M.T, IPM.<br>2. Dipl. Ing. Ir. H. Hery Sunarsono, DEA<br>3. Ir. Aulia Agung Dermawan, S.T., M.T<br>4. Sari Rahmiati, S.Pd., M.Pd.<br>5. Dr. I Made Sondra Wijaya, S.T., M.T<br>6. Firman Edi, S.T., M.T<br>7. Ir. Dimas Akmarul Putera, S.T., M.T<br>8. Razan Muhammad Railis, M.T<br><br>Para dosen ini adalah profesional yang sangat berdedikasi!"
+      ]
+    },
+    {
+      "tag": "lecturer_faculty_international_trade",
+      "patterns": ["Dosen Perdagangan Internasional ITEBA", "Siapa saja dosen di Prodi Perdagangan Internasional ITEBA?", "Daftar dosen Perdagangan Internasional ITEBA", "Siapa dosen Perdagangan Internasional di ITEBA?"],
+      "responses": [
+        "Berikut adalah daftar dosen Perdagangan Internasional:<br><br>1. Prof. Drs. Syukri Lukman, MSc, Ph.D<br>2. Maria Yosefina Meinadia Sekar Kinanti Aswirawan, S.Pd., M.A.B<br>3. Hazimah, S.Si., M.Si<br>4. Rizki Fadhel Dwipananda, M.M.<br>5. Ir. Surya Tri Harto, M.T, MBA.<br>6. Ferryan Syukri, SE, M.Com, Akt, CA<br>7. Freddo Syukri, SE, MM, Akt, CA<br>8. Yulia Diniaty Fitria, S.Psi, M.Psi<br><br>Mereka adalah dosen-dosen yang sangat berpengalaman dan berdedikasi!"
+      ]
+    },
+    {
+      "tag": "lecturer_faculty_digital_business",
+      "patterns": ["Dosen Bisnis Digital ITEBA", "Siapa saja dosen di Prodi Bisnis Digital ITEBA?", "Daftar dosen Bisnis Digital ITEBA", "Siapa dosen Bisnis Digital di ITEBA?"],
+      "responses": [
+        "Berikut adalah daftar dosen Bisnis Digital:<br><br>1. Alvidyan Virgarazman, B.Sc., M.Sc.<br>2. Dely Indah Sari, S.T., M.B.A<br>3. Muhammad Jufri, S.Kom., MM<br><br>Para dosen ini siap membantu Anda memahami dunia bisnis digital!"
+      ]
+    },
+    {
+      "tag": "lecturer_visual_communication_design",
+      "patterns": ["Dosen Desain Komunikasi Visual", "Siapa saja dosen di Prodi Desain Komunikasi Visual?", "Daftar dosen Desain Komunikasi Visual", "Siapa dosen Desain Komunikasi Visual?"],
+      "responses": [
+        "Berikut adalah daftar dosen Desain Komunikasi Visual:<br><br>1. Muhammad Adi Sukma Nalendra, S.Ds., M.Ds.<br>2. Ria Sapitri, S.Sn., M.Sn.<br>3. Hendri Kremer, S.E., M.Si.<br>4. Widiya Lestari Harahap, S.Ds., M.Ds.<br><br>Mereka adalah dosen yang kreatif dan berpengalaman di bidang desain!"
+      ]
+    },
+    {
+      "tag": "lecturer_mathematics",
+      "patterns": ["Dosen Matematika", "Siapa saja dosen di Prodi Matematika?", "Daftar dosen Matematika", "Siapa dosen Matematika?"],
+      "responses": [
+        "Berikut adalah daftar dosen Matematika:<br><br>1. Dr. Sabarinsyah, S.Si., M.Si<br>2. Andini Setyo Anggraeni, S.Pd., M.Sc<br>3. Vitri Aprilla Handayani, S.Si., M.Si<br>4. Faradiba Jabnabillah, S.Pd., M.Pd<br>5. Eko Sulistyono, S.Si., M.Si<br>6. Widya Reza, S.Si., M.Stat<br><br>Mereka adalah ahli matematika yang siap membantu Anda!"
+      ]
+    },
+    {
+      "tag": "lecturer_information_systems",
+      "patterns": ["Dosen Sistem Informasi", "Siapa saja dosen di Prodi Sistem Informasi?", "Daftar dosen Sistem Informasi", "Siapa dosen Sistem Informasi?"],
+      "responses": [
+        "Berikut adalah daftar dosen Sistem Informasi:<br><br>1. Dr. Ir. Ririt Dwiputri Permatasari, S.T., M.SI.<br>2. Alvendo Wahyu Aranski, S.Kom., M.Kom.<br>3. Alhamidi, S.Kom., M.Kom.<br>4. Nadia Widari Nasution, S.Si., M.Kom<br>5. Rifa’atul Mahmudah Burhan, S.Kom., M.Tr.Kom<br>6. Refli Noviardi, S.Kom, M.Kom<br><br>Dosen-dosen ini memiliki keahlian yang luar biasa di bidang sistem informasi!"
+      ]
+    },
+    {
+      "tag": "lecturer_computer_engineering",
+      "patterns": ["Dosen Teknik Komputer", "Siapa saja dosen di Prodi Teknik Komputer?", "Daftar dosen Teknik Komputer", "Siapa dosen Teknik Komputer?"],
+      "responses": [
+        "Berikut adalah daftar dosen Teknik Komputer:<br><br>1. M. Abrar Masril, M.Kom<br>2. Luki Hernando, M.Kom<br>3. Zainul Munir, S.T., Me.TC<br>4. Deosa Putra Caniago, M.Kom<br>5. Joni Eka Candra, S.T., M.T<br>6. Muhammad Adi Setiawan Aritonang, M.Kom<br><br>Mereka adalah pengajar yang sangat berkompeten dan berdedikasi di bidangnya!"
+      ]
+    },
+    {
+      "tag": "iteba_academic_regulations",
+      "patterns": [
+        "Peraturan akademik iteba gimana?",
+        "Peraturan Akademik ITEBA",
+        "Pedoman akademik",
+        "Pedoman akademik ITEBA",
+        "Pedoman akademik iteba",
+        "Pedoman akademik ITEBA gimana?",
+        "Apakah ada Peraturan Akademik kampus",
+        "Informasi Akademik",
+        "Informasi akademik ITEBA"
+      ],
+      "responses": [
+        "Untuk peraturan lengkap Seputar Akademik Institut Teknologi Batam 2024 bisa download di sini yaa: <a href='https://iteba.ac.id/wp-content/uploads/2024/05/FD_PERATURAN-AKADEMIK_ITEBA_2024-upt-1.pdf'>Peraturan Akademik ITEBA 2024</a>"
+      ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": ["Kalender akademik tahun berapa?", "Saya butuh informasi tentang kalender akademik.", "Bisa minta link kalender akademik?", "Kapan dimulainya semester ini?"],
+      "responses": [
+        "Untuk tahun akademik 2022/2023, Anda dapat melihat kalender akademik di <a href='https://iteba.ac.id/wp-content/uploads/2023/01/Kalender-Akademik-ITEBA-2022.pdf'>kalender akademik 2022/2023</a>. Untuk tahun akademik 2024, silakan lihat kalender akademik di <a href='https://iteba.ac.id/wp-content/uploads/2024/04/calender-iteba-2024.pdf'>kalender akademik 2024</a>."
+      ]
+    },
+    {
+      "tag": "Students_Association",
+      "patterns": ["Apa saja himpunan mahasiswa di ITEBA?", "Himpunan mahasiswa apa yang ada di ITEBA?", "Saya ingin tahu tentang himpunan mahasiswa di ITEBA."],
+      "responses": [
+        "Di ITEBA terdapat beberapa himpunan mahasiswa, antara lain:<br>- Himpunan Mahasiswa Sistem Informasi (HMSI)<br>- Himpunan Mahasiswa Teknik Komputer (Himatek)<br>- Himpunan Mahasiswa Desain Komunikasi Visual (Hi-Made)<br>- Himpunan Mahasiswa Matematika<br>- Himpunan Mahasiswa Manajemen Rekayasa (Himasa)<br>- Himpunan Mahasiswa Teknik Industri (HMTI)"
+      ]
+    },
+    {
+      "tag": "Student_activity_units",
+      "patterns": ["Apa saja unit kegiatan mahasiswa di ITEBA?", "Apa saja ukm di ITEBA?", "Unit kegiatan mahasiswa apa yang ada di ITEBA?", "Saya ingin tahu tentang unit kegiatan mahasiswa di ITEBA."],
+      "responses": [
+        "Di ITEBA, unit kegiatan mahasiswa terbagi menjadi 3 pokok:<br><br>**Unit Kegiatan Mahasiswa Keolahragaan:**<br>- Divisi Futsal<br>- Divisi Badminton / Bulu Tangkis<br><br>**Unit Kegiatan Mahasiswa Kesenian:**<br>- Divisi Seni Musik<br>- Divisi Seni Tari<br>- Divisi Paduan Suara<br><br>**Unit Kegiatan Mahasiswa Teknologi:**<br>- Divisi Fotografi"
+      ]
+    },
+    {
+      "tag": "promo",
+      "patterns": [
+        "Ada promo apa sekarang?",
+        "Bisa beri tahu promo yang sedang berlangsung?",
+        "Apa ada diskon saat ini?",
+        "Promo terbaru apa?",
+        "Diskon apa yang tersedia sekarang?",
+        "Saya ingin tahu tentang promo terbaru",
+        "Ada promo untuk pendaftaran?",
+        "Promo untuk pendaftaran kampus?",
+        "Diskon untuk pendaftaran?",
+        "Bagaimana cara mendapatkan diskon untuk pendaftaran saya?",
+        "Apa saya bisa dapat diskon dengan nilai saya?",
+        "Berapa diskon untuk pendaftaran saya?",
+        "Ada promo untuk nilai 300?",
+        "Ada diskon untuk nilai 500?",
+        "Promo untuk nilai 400?",
+        "Diskon untuk nilai 450?",
+        "Promo pendaftaran kampus apa saja?",
+        "Bagaimana cara mendapatkan promo pendaftaran?",
+        "Apa saya bisa dapat diskon dengan nilai saya?",
+        "Berapa diskon untuk nilai saya?",
+        "Ada promo untuk ujian?",
+        "Promo untuk nilai ujian?",
+        "Diskon untuk skor ujian?",
+        "Bagaimana cara mendapatkan diskon untuk skor saya?",
+        "Apa saya bisa dapat diskon dengan nilai ujian saya?",
+        "Berapa diskon untuk skor ujian saya?",
+        "Ada promo untuk skor 300?",
+        "Ada diskon untuk skor 500?",
+        "Promo untuk skor 400?",
+        "Diskon untuk skor 450?",
+        "Promo UTBK apa saja?",
+        "Bagaimana cara mendapatkan promo UTBK?",
+        "Apa saya bisa dapat diskon dengan skor UTBK saya?",
+        "Berapa diskon untuk skor UTBK saya?"
+      ],
+      "responses": [
+        "Berikut adalah promo pendaftaran yang sedang berlangsung:<br><br> Promo Kemerdekaan ITEBA <br><br> Periode Promo Kemerdekaan: 18 Juli - 31 Agustus<br><br> Detail Promo:<br>* Potongan 79% - Biaya Awal hanya Rp 2.095.000 (dari harga normal Rp 5.650.000) - Kuota 17 orang.<br>* Potongan 45% - Biaya Awal hanya Rp 3.625.000 (dari harga normal Rp 5.650.000) - Kuota 23 orang.<br>* Potongan 17% - Biaya Awal hanya Rp 4.885.000 (dari harga normal Rp 5.650.000) - Kuota 40 orang.<br>* Potongan 8% - Biaya Awal hanya Rp 5.290.000 (dari harga normal Rp 5.650.000) - Kuota 30 orang.<br><br>Segera manfaatkan kesempatan ini untuk mendapatkan diskon sesuai dengan kategori yang tersedia!<br><br>Selain itu, ada juga promo berdasarkan skor UTBK Anda:<br>- Skor 300-400: Diskon 30%<br>- Skor 401-439: Diskon 45%<br>- Skor 440-469: Diskon 60%<br>- Skor 470-499: Diskon 80%<br>- Skor 500 ke atas: Diskon 100%<br><br>Segera tukarkan skor UTBK Anda untuk mendapatkan diskon sesuai dengan kategori skor Anda!"
+      ]
+    },
+    {
+      "tag": "jadwal_kelas",
+      "patterns": [
+        "Apa saja jadwal kelas yang tersedia?",
+        "Bisa beri tahu jadwal kelas?",
+        "Jadwal kelas pagi",
+        "Jadwal kelas malam",
+        "Kapan kelas pagi dimulai?",
+        "Kapan kelas malam dimulai?",
+        "Ada kelas shift?",
+        "Bagaimana jadwal kelas shift?",
+        "Kelas pagi jam berapa?",
+        "Kelas malam jam berapa?",
+        "Jadwal kelas shift",
+        "Bisa beri tahu jadwal kelas shift?",
+        "Jam berapa kelas pagi?",
+        "Jam berapa kelas malam?",
+        "Bisa masuk kelas shift?",
+        "Kelas shift itu apa?"
+      ],
+      "responses": ["Berikut adalah jadwal kelas yang tersedia:<br><br>- Kelas Pagi: 08.00 - 15.00<br>- Kelas Malam: 18.00 - 22.00<br>- Kelas Shift: Bisa masuk di kelas pagi atau malam sesuai jadwal yang Anda pilih."]
+    },
+    {
+      "tag": "current_wave_registration_info",
+      "patterns": [
+        "Berapa biaya registrasi untuk gelombang pendaftaran saat ini?",
+        "Biaya registrasi gelombang pendaftaran sekarang berapa?",
+        "Berapa uang yang harus dibayar untuk registrasi gelombang pendaftaran saat ini?",
+        "Berapa uang pangkal untuk gelombang pendaftaran sekarang?",
+        "Uang pangkal gelombang pendaftaran sekarang berapa?",
+        "Berapa uang pangkal yang harus dibayar untuk gelombang pendaftaran saat ini?",
+        "Kapan periode pendaftaran gelombang saat ini?",
+        "Sampai kapan pendaftaran gelombang pendaftaran sekarang?",
+        "Kapan batas akhir pendaftaran gelombang saat ini?"
+      ],
+      "responses": ["Informasi Pendaftaran Gelombang Terkini yaitu gelombang 3 dengan detail info dibawah ini:<br>- Biaya Registrasi: Rp 0<br>- Uang Pangkal: Rp 5.650.000<br>- Periode Pendaftaran: s.d. 30 September 2024"]
+    },
+    {
+      "tag": "Fasilitas_Kampus",
+      "patterns": [
+        "Laboratorium Mekatronika",
+        "Laboratorium Komputer",
+        "Laboratorium Kimia",
+        "Laboratorium Fisika",
+        "Laboratorium Studio Fotografi, Videografi, dan Podcast",
+        "Perpustakaan",
+        "Apa saja sarana di kampus?",
+        "Fasilitas dan sarana apa yang tersedia di kampus?",
+        "Sarana dan prasarana di kampus",
+        "Apa saja fasilitas dana sarana di kampus?",
+        "Apa saja sarana dan fasilitas di kampus?",
+        "Bagaimana dengan fasilitas dan sarana kampus?",
+        "Bagaimana dengan sarana kampus?",
+        "Sarana kampus"
+      ],
+      "responses": [
+        "### Fasilitas Kampus<br><br>1. *Laboratorium Mekatronika<br>   - Tempat untuk praktikum dan penelitian di bidang mekatronika, dilengkapi dengan sarana peralatan modern seperti robot industri, PLC, dan sensor canggih.<br><br>2. **Laboratorium Komputer<br>   - Fasilitas ini menyediakan komputer dengan spesifikasi tinggi dan perangkat lunak terbaru sebagai sarana untuk mendukung pembelajaran dan penelitian di bidang teknologi informasi dan komputer.<br><br>3. **Laboratorium Kimia<br>   - Tempat penyelenggaraan kegiatan praktikum kimia, yang merupakan mata kuliah dasar dari program studi Manajemen Rekayasa, Teknik Industri, dan Matematika. Laboratorium ini dilengkapi dengan sarana LD-5 Electronic Centrifuge, Analytical Balance Fujitsu, Magnetic Stirrer D-Lab, dan berbagai peralatan lainnya.<br><br>4. **Laboratorium Fisika<br>   - Dilengkapi dengan sarana alat-alat untuk percobaan dan penelitian di bidang fisika, termasuk osiloskop, generator fungsi, dan peralatan optik.<br><br>5. **Laboratorium Studio Fotografi, Videografi, dan Podcast<br>   - Fasilitas ini menyediakan ruang dan sarana peralatan profesional untuk fotografi, videografi, dan pembuatan podcast, termasuk kamera DSLR, lighting kit, dan perangkat rekaman audio.<br><br>6. **Perpustakaan*<br>   - Perpustakaan kampus menyediakan berbagai sarana koleksi buku, jurnal, dan sumber daya digital untuk mendukung kegiatan akademik dan penelitian. Fasilitas ini juga dilengkapi dengan ruang baca yang nyaman dan akses internet.<br><br>Dengan berbagai fasilitas dan sarana yang lengkap ini, kampus ini berkomitmen untuk menyediakan lingkungan belajar yang mendukung pengembangan pengetahuan dan keterampilan mahasiswa."
+      ]
+    },
+    {
+      "tag": "apology",
+      "patterns": ["Maaf", "Saya minta maaf", "Permintaan maaf saya", "Maafkan saya", "Mohon maaf"],
+      "responses": [
+        "Tidak masalah sama sekali!",
+        "Tidak apa-apa! Ada yang bisa saya bantu?",
+        "Permintaan maaf diterima. Bagaimana saya bisa membantu Anda?",
+        "Tidak perlu khawatir! Apa yang bisa saya lakukan untuk Anda?",
+        "Tidak apa-apa! Jika Anda membutuhkan bantuan lainnya, silakan tanyakan."
+      ]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "Ceritakan sebuah lelucon",
+        "Apakah ada fakta menarik?",
+        "Ceritakan sesuatu yang menarik",
+        "Apa warna favoritmu?",
+        "Berikan saya lelucon",
+        "Ada cerita lucu?",
+        "Apa yang lucu hari ini?",
+        "Ceritakan sesuatu yang membuat saya tertawa"
+      ],
+      "responses": [
+        "Kenapa mahasiswa selalu membawa pulpen ke kampus? Karena mereka harus siap untuk 'menulis' sejarah!",
+        "Apa yang dikatakan mahasiswa saat ditanya kenapa sering terlambat? 'Saya hanya menunggu inspirasi datang!'",
+        "Kenapa dosen tidak pernah hilang? Karena mereka selalu 'terkunci' dalam ruang kuliah!",
+        "Bagaimana cara mahasiswa membuat kopi di kampus? Mereka 'mengulangi' resep setiap hari!",
+        "Kenapa ruangan kuliah sering gelap? Karena banyak mahasiswa yang 'banyak berpikir' dan sedikit beraksi!",
+        "Apa yang dikatakan laptop saat ditanya kenapa sering mati mendadak? 'Saya butuh istirahat dari semua 'input'!'",
+        "Kenapa mahasiswa tidak pernah takut ujian? Karena mereka sudah terbiasa 'menyelesaikan' masalah!",
+        "Apa yang dilakukan mahasiswa saat tidak tahu jawaban ujian? Mereka 'mengalir' dengan jawaban mereka sendiri!",
+        "Kenapa kampus sering diisi dengan suara mesin printer? Karena printer adalah teman 'setia' mahasiswa!",
+        "Apa yang dikatakan mahasiswa saat melihat jadwal kuliah yang padat? 'Sepertinya saya harus 'beradaptasi' dengan keadaan!'"
+      ]
+    }
+  ]
+}
